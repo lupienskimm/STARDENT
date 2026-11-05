@@ -139,13 +139,6 @@ button, input, textarea { font: inherit; color: inherit; }
   border-radius: 999px;
   background: linear-gradient(90deg, var(--lime) 50%, var(--cyan) 50%);
 }
-.slogan {
-  font-family: var(--display);
-  font-style: italic;
-  color: var(--lime);
-  margin-top: 0.7rem;
-}
-
 .home-hero {
   position: relative;
   overflow: hidden;
@@ -176,12 +169,8 @@ button, input, textarea { font: inherit; color: inherit; }
 .home-hero-copy, .home-hero-photo { position: relative; }
 .home-hero-copy { padding-right: 0.4rem; }
 .home-hero .kicker { color: #CFE4EA; }
-.home-hero h1 {
-  font-size: clamp(2.6rem, 1.4rem + 3.4vw, 4.5rem);
-  font-weight: 300;
-  color: #fff;
-  max-width: 12ch;
-}
+.home-hero h1 { max-width: 36rem; }
+.hero-slogan { display: block; width: 100%; height: auto; }
 .home-hero .lead {
   margin-top: 1.15rem;
   max-width: 42rem;
