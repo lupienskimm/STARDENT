@@ -26,26 +26,6 @@
     });
   }
 
-  var version = "1";
-  try { version = localStorage.getItem("stardent-v") || "1"; } catch (e) {}
-  if (!/^[1-5]$/.test(version)) version = "1";
-  document.documentElement.setAttribute("data-v", version);
-  function markVersion(current) {
-    var buttons = document.querySelectorAll("[data-version]");
-    Array.prototype.forEach.call(buttons, function (btn) {
-      btn.setAttribute("aria-pressed", btn.getAttribute("data-version") === current ? "true" : "false");
-    });
-  }
-  markVersion(version);
-  Array.prototype.forEach.call(document.querySelectorAll("[data-version]"), function (btn) {
-    btn.addEventListener("click", function () {
-      version = btn.getAttribute("data-version");
-      document.documentElement.setAttribute("data-v", version);
-      try { localStorage.setItem("stardent-v", version); } catch (e) {}
-      markVersion(version);
-    });
-  });
-
   var week = document.querySelectorAll(".week li");
   var today = new Date().getDay();
   if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
@@ -74,6 +54,25 @@
     window.addEventListener("resize", onScroll);
   }
 
+  var frame = document.querySelector(".slide-frame");
+  if (frame) {
+    var slides = Array.prototype.slice.call(frame.querySelectorAll("a"));
+    var slideIndex = 0;
+    function goSlide(n) {
+      slideIndex = (n + slides.length) % slides.length;
+      slides.forEach(function (slide, idx) {
+        slide.classList.toggle("is-on", idx === slideIndex);
+      });
+    }
+    var prev = document.querySelector(".slide-prev");
+    var next = document.querySelector(".slide-next");
+    if (prev) prev.addEventListener("click", function () { goSlide(slideIndex - 1); });
+    if (next) next.addEventListener("click", function () { goSlide(slideIndex + 1); });
+    if (slides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setInterval(function () { goSlide(slideIndex + 1); }, 5000);
+    }
+  }
+
   var links = Array.prototype.slice.call(document.querySelectorAll("[data-gallery]"));
   if (!links.length) return;
   var lb = document.querySelector(".lb");
@@ -86,7 +85,8 @@
     var link = links[index];
     lbImg.src = link.getAttribute("href");
     lbImg.alt = link.querySelector("img").alt;
-    lbCap.textContent = link.querySelector("figcaption").textContent;
+    var cap = link.querySelector("figcaption");
+    lbCap.textContent = cap ? cap.textContent : "";
     lb.classList.add("is-open");
     document.body.style.overflow = "hidden";
   }

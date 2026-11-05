@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <script>try{var v=localStorage.getItem("stardent-v")||"1";if(!/^[1-5]$/.test(v))v="1";document.documentElement.setAttribute("data-v",v);}catch(e){}</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Star-Dent clinic s.r.o. | Stomatologické centrum</title>
@@ -26,7 +25,6 @@
         <a href="o-nas.html">O nás</a>
         <a href="sluzby.html">Služby</a>
         <a href="nas-tym.html">Náš tým</a>
-        <a href="aktuality.html">Aktuality</a>
         <a href="fotogalerie.html">Fotogalerie</a>
         <a href="kontakt.html">Kontakt</a>
       <a class="nav-cta" href="tel:+420774822554">774 822 554</a>
@@ -48,7 +46,6 @@
       </div>
       <figure class="home-hero-photo">
         <img src="img/recepce.jpg" alt="Recepce Star-Dent clinic v Mostech u Jablunkova">
-        <figcaption class="hero-badge">3D rentgen <strong>CBCT</strong></figcaption>
       </figure>
     </section>
     <section class="week-band" aria-labelledby="hodiny">
@@ -98,49 +95,65 @@
         </div>
         <div class="svc-list">
           <a class="svc-row" href="pravidelne-prohlidky.html">
-            <span class="num">01</span>
             <h3>Pravidelné prohlídky</h3>
             <p>Pravidelné preventivní prohlídky jsou základem dlouhodobě zdravého chrupu.</p>
           </a>
           <a class="svc-row" href="dentalni-hygiena.html">
-            <span class="num">02</span>
             <h3>Dentální hygiena a bělení</h3>
             <p>Dentální hygiena je nedílnou součástí péče o chrup a důležitým krokem v prevenci zubního kazu i onemocnění dásní.</p>
           </a>
           <a class="svc-row" href="zubni-implantaty.html">
-            <span class="num">03</span>
             <h3>Zubní implantáty</h3>
             <p>Zubní implantát představuje moderní možnost náhrady chybějícího zubu.</p>
           </a>
           <a class="svc-row" href="zubni-protetika.html">
-            <span class="num">04</span>
             <h3>Zubní protetika</h3>
             <p>Zubní protetika se zabývá obnovou poškozených zubů a náhradou zubů, které již není možné zachovat nebo v chrupu zcela chybí.</p>
           </a>
           <a class="svc-row" href="odborna-konzultace.html">
-            <span class="num">05</span>
             <h3>Odborná konzultace</h3>
             <p>U rozsáhlejších nebo složitějších stomatologických problémů je důležité nejprve správně určit možnosti další léčby.</p>
           </a>
         </div>
       </div>
     </section>
-    <section class="band">
+    <section class="band home-gallery" aria-label="Fotogalerie">
       <div class="wrap">
         <div class="section-label">
-          <h2>Aktuality</h2>
-          <a class="linkish" href="aktuality.html">Aktuality</a>
+          <h2>Fotogalerie</h2>
+          <a class="linkish" href="fotogalerie.html">Celá galerie</a>
         </div>
-        <article class="news-row">
-          <time datetime="2026-08-08">8. 8. 2026</time>
-          <div>
-            <h3><a href="pruzne-nahrady-flexite.html">Pružné náhrady Flexite®</a></h3>
-            <p>Naše klinika nově pořídila moderní injektážní přístroj, který nám umožňuje zhotovovat pružné zubní náhrady Flexite® z termoplastického nylonového polyamidu.</p>
+        <div class="slideshow">
+          <button class="slide-nav slide-prev" type="button" aria-label="Předchozí fotka">‹</button>
+          <div class="slide-frame">
+            <a class="is-on" href="img/cekarna.jpg" data-gallery><img src="img/cekarna.jpg" alt="Čekárna"></a>
+            <a href="img/recepce.jpg" data-gallery><img src="img/recepce.jpg" alt="Recepce"></a>
+            <a href="img/recepce-2.jpg" data-gallery><img src="img/recepce-2.jpg" alt="Recepce"></a>
+            <a href="img/chodba.jpg" data-gallery><img src="img/chodba.jpg" alt="Chodba kliniky"></a>
+            <a href="img/detsky-koutek.jpg" data-gallery><img src="img/detsky-koutek.jpg" alt="Dětský koutek"></a>
+            <a href="img/pitna-voda.jpg" data-gallery><img src="img/pitna-voda.jpg" alt="Pitná voda v čekárně"></a>
+            <a href="img/cbct.jpg" data-gallery><img src="img/cbct.jpg" alt="3D rentgen CBCT"></a>
+            <a href="img/ordinace-hneda.jpg" data-gallery><img src="img/ordinace-hneda.jpg" alt="Ordinace"></a>
+            <a href="img/ordinace-bila.jpg" data-gallery><img src="img/ordinace-bila.jpg" alt="Ordinace"></a>
+            <a href="img/ordinace-modra.jpg" data-gallery><img src="img/ordinace-modra.jpg" alt="Ordinace"></a>
+            <a href="img/ordinace-drevo.jpg" data-gallery><img src="img/ordinace-drevo.jpg" alt="Ordinace"></a>
+            <a href="img/osetreni.jpg" data-gallery><img src="img/osetreni.jpg" alt="Ošetření"></a>
+            <a href="img/lekari.jpg" data-gallery><img src="img/lekari.jpg" alt="Lékaři"></a>
+            <a href="img/tym.jpg" data-gallery><img src="img/tym.jpg" alt="Tým kliniky"></a>
           </div>
-          <a href="pruzne-nahrady-flexite.html"><img src="img/flexite.jpg" alt="Pružná částečná náhrada Flexite"></a>
-        </article>
+          <button class="slide-nav slide-next" type="button" aria-label="Další fotka">›</button>
+        </div>
       </div>
     </section>
+    <div class="lb" role="dialog" aria-modal="true" aria-label="Fotografie">
+      <button class="lb-close" type="button">Zavřít</button>
+      <button class="lb-prev" type="button">Předchozí</button>
+      <button class="lb-next" type="button">Další</button>
+      <div>
+        <img alt="">
+        <p></p>
+      </div>
+    </div>
 
   </main>
   <footer class="site-footer">
@@ -154,7 +167,6 @@
         <a href="o-nas.html">O nás</a>
         <a href="sluzby.html">Naše služby</a>
         <a href="nas-tym.html">Náš tým</a>
-        <a href="aktuality.html">Aktuality</a>
         <a href="fotogalerie.html">Fotogalerie</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
@@ -164,14 +176,6 @@
       </div>
     </div>
     <div class="wrap fine">Jednatel společnosti MDDr. Marian Starzyk MBA · IČ 04089821</div>
-      <div class="wrap versions" role="group" aria-label="Verze vzhledu">
-      <span>Vzhled</span>
-      <button type="button" data-version="1">V1</button>
-      <button type="button" data-version="2">V2</button>
-      <button type="button" data-version="3">V3</button>
-      <button type="button" data-version="4">V4</button>
-      <button type="button" data-version="5">V5</button>
-    </div>
   </footer>
   <script src="js/site.js"></script>
 </body>
