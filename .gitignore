@@ -1,2 +1,5 @@
 ﻿_research/
+.vercel/
 
+.vercel
+.env*

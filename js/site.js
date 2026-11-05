@@ -26,6 +26,10 @@
     });
   }
 
+  var week = document.querySelectorAll(".week li");
+  var today = new Date().getDay();
+  if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
+
   var links = Array.prototype.slice.call(document.querySelectorAll("[data-gallery]"));
   if (!links.length) return;
   var lb = document.querySelector(".lb");
