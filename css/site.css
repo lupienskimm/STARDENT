@@ -768,17 +768,27 @@ body:has(.contact-grid) { background: var(--paper); }
 }
 
 .versions {
+  position: fixed;
+  z-index: 60;
+  top: 50%;
+  right: 0.7rem;
+  transform: translateY(-50%);
+  width: auto;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 1.15rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,.16);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  padding: 0.55rem 0.4rem;
+  border-radius: 18px;
+  background: rgba(6, 43, 56, 0.94);
+  box-shadow: 0 12px 28px rgba(6, 43, 56, 0.22);
 }
 .versions span {
-  margin-right: 0.35rem;
-  font-size: 0.75rem;
+  margin: 0 0 0.1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -787,9 +797,9 @@ body:has(.contact-grid) { background: var(--paper); }
   background: transparent;
   color: #fff;
   border-radius: 999px;
-  padding: 0.32rem 0.72rem;
+  padding: 0.38rem 0.55rem;
   font-family: var(--sans);
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -842,8 +852,7 @@ html[data-v="2"] .site-footer .brand,
 html[data-v="2"] .site-footer .logo-type,
 html[data-v="2"] .site-footer a { color: var(--ink); }
 html[data-v="2"] .fine { color: var(--muted); }
-html[data-v="2"] .versions { border-top-color: var(--line); }
-html[data-v="2"] .versions button { color: var(--ink); border-color: var(--line); }
+html[data-v="2"] .versions button { color: #fff; border-color: rgba(255,255,255,.4); }
 
 html[data-v="3"] .site-header { background: #fff; box-shadow: inset 0 -4px 0 var(--lime); }
 html[data-v="3"] .brand,
@@ -878,8 +887,7 @@ html[data-v="3"] .site-footer .brand,
 html[data-v="3"] .site-footer .logo-type,
 html[data-v="3"] .site-footer a { color: var(--deep); }
 html[data-v="3"] .fine { color: var(--muted); }
-html[data-v="3"] .versions { border-top-color: var(--line); }
-html[data-v="3"] .versions button { color: var(--deep); border-color: var(--deep); border-radius: 0; }
+html[data-v="3"] .versions button { color: #fff; border-color: rgba(255,255,255,.4); border-radius: 999px; }
 
 html[data-v="4"] body { background: #f3f8f8; }
 html[data-v="4"] .home-hero { background: #0c4d63; }
