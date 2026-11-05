@@ -26,6 +26,26 @@
     });
   }
 
+  var version = "1";
+  try { version = localStorage.getItem("stardent-v") || "1"; } catch (e) {}
+  if (!/^[1-5]$/.test(version)) version = "1";
+  document.documentElement.setAttribute("data-v", version);
+  function markVersion(current) {
+    var buttons = document.querySelectorAll("[data-version]");
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-version") === current ? "true" : "false");
+    });
+  }
+  markVersion(version);
+  Array.prototype.forEach.call(document.querySelectorAll("[data-version]"), function (btn) {
+    btn.addEventListener("click", function () {
+      version = btn.getAttribute("data-version");
+      document.documentElement.setAttribute("data-v", version);
+      try { localStorage.setItem("stardent-v", version); } catch (e) {}
+      markVersion(version);
+    });
+  });
+
   var week = document.querySelectorAll(".week li");
   var today = new Date().getDay();
   if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
