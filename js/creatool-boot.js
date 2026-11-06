@@ -29,19 +29,24 @@
       { name: "Bílá", value: "#ffffff" }
     ],
     pages: [
-      { path: "index.html", label: "Domů" },
-      { path: "o-nas.html", label: "Klinika/tým" },
-      { path: "sluzby.html", label: "Služby" },
-      { path: "pravidelne-prohlidky.html", label: "Pravidelné prohlídky" },
-      { path: "dentalni-hygiena.html", label: "Dentální hygiena" },
-      { path: "zubni-implantaty.html", label: "Zubní implantáty" },
-      { path: "zubni-protetika.html", label: "Zubní protetika" },
-      { path: "odborna-konzultace.html", label: "Odborná konzultace" },
-      { path: "kontakt.html", label: "Kontakt" },
-      { path: "ochrana-osobnich-udaju.html", label: "Ochrana osobních údajů" },
-      { path: "cookies.html", label: "Cookies" }
+      { path: "/", label: "Domů" },
+      { path: "/o-nas", label: "Klinika/tým" },
+      { path: "/sluzby", label: "Služby" },
+      { path: "/pravidelne-prohlidky", label: "Pravidelné prohlídky" },
+      { path: "/dentalni-hygiena", label: "Dentální hygiena" },
+      { path: "/zubni-implantaty", label: "Zubní implantáty" },
+      { path: "/zubni-protetika", label: "Zubní protetika" },
+      { path: "/odborna-konzultace", label: "Odborná konzultace" },
+      { path: "/kontakt", label: "Kontakt" },
+      { path: "/ochrana-osobnich-udaju", label: "Ochrana osobních údajů" },
+      { path: "/cookies", label: "Cookies" }
     ],
-    pageKey: function (loc) { return loc.pathname.split("/").pop() || "index.html"; }
+    pageKey: function (loc) {
+      var path = loc.pathname.replace(/\.html$/, "");
+      if (path.length > 1 && path.charAt(path.length - 1) === "/") path = path.slice(0, -1);
+      if (!path || path === "/index") return "/";
+      return path;
+    }
   };
 
   var footer = document.querySelector(".site-footer");
