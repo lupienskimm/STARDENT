@@ -994,7 +994,7 @@ body:has(.contact-grid) { background: var(--paper); }
   .home-hero-photo img + img { height: 100%; }
   .systems { grid-template-columns: 1fr; }
   .systems li + li { border-left: 0; border-top: 1px solid rgba(255,255,255,.14); }
-  .contact-grid > div:first-child { border-radius: 96px 28px 28px 28px; }
+  .contact-grid > div:first-child { border-radius: 28px 96px 28px 28px; }
   .map, .map iframe { min-height: 320px; }
   .map { border-radius: 28px 28px 96px 28px; }
   .doc,
