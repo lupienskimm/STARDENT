@@ -780,6 +780,21 @@ body:has(.contact-grid) { background: var(--paper); }
 .fine p + p { margin-top: 0.55rem; }
 .fine-links { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; }
 .fine-links a { color: #E6F1F4; text-decoration: underline; text-underline-offset: 0.15em; }
+.credit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+.credit p {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: #9FB8C0;
+}
+.credit strong { font-weight: 600; color: var(--lime); }
+.credit img { height: 34px; width: auto; display: block; }
 .legal-doc { padding-bottom: 3.2rem; }
 .legal-doc .meta { color: var(--muted); margin-bottom: 0.4rem; }
 .legal-doc h2 { font-size: clamp(1.35rem, 2vw, 1.7rem); margin: 1.5rem 0 0.45rem; }
