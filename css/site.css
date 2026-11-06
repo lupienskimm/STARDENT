@@ -934,10 +934,10 @@ body:has(.contact-grid) { background: var(--paper); }
   .site-nav.is-closing::after {
     content: "";
     position: absolute;
-    left: -28vw;
-    bottom: -18vh;
-    width: 108vw;
-    height: calc(108vw * 601 / 406);
+    left: -22vw;
+    bottom: -14vh;
+    width: 148vw;
+    height: calc(148vw * 601 / 406);
     margin: 0;
     background: url("../img/logo.svg") left bottom / 100% 100% no-repeat;
     pointer-events: none;
