@@ -644,7 +644,7 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .contact-grid > div:first-child {
   background: #fff;
-  border-radius: 36px;
+  border-radius: 40px 40px 40px 160px;
   padding: clamp(1.3rem, 3vw, 2.2rem);
 }
 body:has(.contact-grid) { background: var(--paper); }
@@ -678,10 +678,12 @@ body:has(.contact-grid) { background: var(--paper); }
   text-transform: uppercase;
   font-size: 0.92rem;
 }
-.map { min-height: 460px; border-radius: 36px; overflow: hidden; background: var(--line); }
+.map { height: 100%; min-height: 460px; border-radius: 40px 40px 160px 40px; overflow: hidden; background: var(--line); }
 .map iframe { width: 100%; height: 100%; min-height: 460px; border: 0; }
 
-.form { display: grid; gap: 0.8rem; padding: 0 0 3.5rem; max-width: 720px; }
+.contact-form { padding-bottom: 3.5rem; }
+.contact-form h2 { text-align: center; font-size: 1.8rem; margin-bottom: 0.8rem; }
+.form { display: grid; gap: 0.8rem; padding: 0; max-width: 720px; margin-inline: auto; }
 .form label { display: grid; gap: 0.3rem; font-size: 0.92rem; font-weight: 600; }
 .form input, .form textarea {
   border: 1.5px solid var(--line);
