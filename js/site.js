@@ -19,7 +19,7 @@
         closeTimer = window.setTimeout(function () {
           nav.classList.remove("is-closing");
           document.body.style.overflow = "";
-        }, 420);
+        }, 820);
       } else {
         nav.classList.remove("is-closing");
         nav.classList.add("is-open");
@@ -71,6 +71,32 @@
     clip.addEventListener("pause", keepPlaying);
     keepPlaying();
   });
+
+  var hero = document.querySelector(".home-hero");
+  var heroVideo = hero && hero.querySelector(".hero-bg");
+  if (hero && heroVideo && !reduceMotion) {
+    var desktop = window.matchMedia("(min-width: 981px)");
+    var parallaxTicking = false;
+    var moveHero = function () {
+      parallaxTicking = false;
+      if (!desktop.matches) {
+        heroVideo.style.transform = "";
+        return;
+      }
+      var top = hero.getBoundingClientRect().top;
+      if (top > window.innerHeight || top < -hero.offsetHeight) return;
+      var shift = Math.max(0, -top) * 0.28;
+      heroVideo.style.transform = "translate3d(0, " + shift.toFixed(1) + "px, 0)";
+    };
+    var requestHero = function () {
+      if (parallaxTicking) return;
+      parallaxTicking = true;
+      window.requestAnimationFrame(moveHero);
+    };
+    window.addEventListener("scroll", requestHero, { passive: true });
+    window.addEventListener("resize", requestHero);
+    moveHero();
+  }
 
   var frame = document.querySelector(".slide-frame");
   if (frame) {
