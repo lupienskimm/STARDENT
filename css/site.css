@@ -1007,7 +1007,6 @@ body:has(.contact-grid) { background: var(--paper); }
   .about-sheet { margin-top: -5.5rem; }
   .stage-a img, .stage-b img { min-height: 240px; }
   .split img { height: 280px; border-radius: 90px 28px 28px 28px; }
-  .clinic-photo img { border-radius: 28px 28px 28px 90px; }
   .facts {
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     gap: 0.45rem;
