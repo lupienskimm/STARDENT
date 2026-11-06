@@ -255,6 +255,19 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .home-hero .week { width: 100%; margin-top: 0.9rem; }
 .home-hero .week li { background: rgba(255,255,255,.94); }
+.home-hero .week .time { color: var(--teal); }
+.home-hero .week li.is-today .time { color: #fff; }
+@media (min-width: 981px) {
+  .home-hero .week {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    max-width: 36rem;
+    margin: 0;
+  }
+}
 .btn {
   display: inline-flex;
   align-items: center;
