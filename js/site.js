@@ -30,30 +30,6 @@
   var today = new Date().getDay();
   if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
 
-  var hero = document.querySelector(".home-hero");
-  if (hero && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var header = document.querySelector(".site-header");
-    var ticking = false;
-    function updateLogo() {
-      ticking = false;
-      var headerH = header ? header.offsetHeight : 0;
-      var rect = hero.getBoundingClientRect();
-      var travel = hero.offsetHeight;
-      var p = travel ? (headerH - rect.top) / travel : 0;
-      if (p < 0) p = 0;
-      if (p > 1) p = 1;
-      hero.style.setProperty("--logo-p", p.toFixed(4));
-    }
-    function onScroll() {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(updateLogo);
-    }
-    updateLogo();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-  }
-
   var frame = document.querySelector(".slide-frame");
   if (frame) {
     var slides = Array.prototype.slice.call(frame.querySelectorAll("a"));
