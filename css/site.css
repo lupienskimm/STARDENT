@@ -237,15 +237,12 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .home-hero h1 { grid-row: 2; align-self: center; max-width: 36rem; margin: 0; }
 .hero-slogan { display: block; width: 100%; height: auto; }
-.hero-follow {
+.hero-actions {
   grid-row: 3;
   align-self: start;
+  justify-self: start;
   width: 100%;
   max-width: 36rem;
-}
-.hero-actions {
-  align-self: start;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
@@ -253,21 +250,8 @@ button, input, textarea { font: inherit; color: inherit; }
   justify-content: center;
   margin-top: 1.6rem;
 }
-.home-hero .week { width: 100%; margin-top: 0.9rem; }
-.home-hero .week li { background: rgba(255,255,255,.94); }
-.home-hero .week .time { color: var(--teal); }
-.home-hero .week li.is-today .time { color: #fff; }
-@media (min-width: 981px) {
-  .home-hero .week {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    max-width: 36rem;
-    margin: 0;
-  }
-}
+.hours-band { background: #fff; padding: 1.35rem 0 0.2rem; }
+.hours-band .week { margin: 0 auto; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -351,7 +335,7 @@ button, input, textarea { font: inherit; color: inherit; }
   font-weight: 500;
   color: var(--teal);
 }
-.week .time { font-family: var(--display); font-size: clamp(0.62rem, 2.1vw, 0.78rem); white-space: nowrap; }
+.week .time { font-family: var(--display); font-size: clamp(0.62rem, 2.1vw, 0.78rem); white-space: nowrap; color: var(--teal); }
 .week li.is-today .day { color: var(--lime); }
 .week li.is-today .time { color: #fff; }
 
