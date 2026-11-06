@@ -1008,27 +1008,14 @@ body:has(.contact-grid) { background: var(--paper); }
   .stage-a img, .stage-b img { min-height: 240px; }
   .split img { height: 280px; border-radius: 90px 28px 28px 28px; }
   .clinic-photo img { border-radius: 28px 28px 28px 90px; }
-  .split { position: relative; }
   .facts {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    z-index: 3;
-    width: max-content;
-    max-width: calc(100% - 0.6rem);
-    margin: 0;
-    transform: translate(-50%, 50%);
-    grid-template-columns: auto auto;
-    justify-content: center;
-    gap: 0.4rem;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 0.45rem;
   }
-  .facts div {
-    padding: 0.36rem 0.62rem;
-    box-shadow: 0 8px 18px rgba(6,43,56,.14);
-  }
+  .facts div { padding: 0.7rem 0.45rem; }
   .facts strong {
-    font-size: clamp(0.78rem, 3.6vw, 0.92rem);
-    line-height: 1.15;
+    font-size: clamp(0.68rem, 3.15vw, 0.95rem);
+    line-height: 1.2;
     white-space: nowrap;
   }
 }
