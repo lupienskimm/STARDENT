@@ -250,7 +250,7 @@ button, input, textarea { font: inherit; color: inherit; }
   justify-content: center;
   margin-top: 1.6rem;
 }
-.hours-band { background: #fff; padding: 1.35rem 0 0.2rem; }
+.hours-band { background: #fff; padding: 1.35rem 0; }
 .hours-band .week { margin: 0 auto; }
 .btn {
   display: inline-flex;
