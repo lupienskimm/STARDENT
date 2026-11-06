@@ -778,6 +778,29 @@ body:has(.contact-grid) { background: var(--paper); }
 .site-footer a:hover { color: var(--lime); }
 .site-footer nav { display: grid; align-content: start; gap: 0.3rem; }
 .fine { margin-top: 1.3rem; color: #9FB8C0; font-size: 0.92rem; }
+.fine p + p { margin-top: 0.55rem; }
+.fine-links { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; }
+.fine-links a { color: #E6F1F4; text-decoration: underline; text-underline-offset: 0.15em; }
+.legal-doc { padding-bottom: 3.2rem; }
+.legal-doc .meta { color: var(--muted); margin-bottom: 0.4rem; }
+.legal-doc h2 { font-size: clamp(1.35rem, 2vw, 1.7rem); margin: 1.5rem 0 0.45rem; }
+.legal-doc p + p, .legal-doc ul { margin-top: 0.7rem; }
+.legal-doc ul { margin-left: 1.15rem; }
+.legal-doc li + li { margin-top: 0.35rem; }
+.creatool-switch {
+  display: block;
+  width: max-content;
+  margin: 0.8rem 0 0 auto;
+  border: 0;
+  background: transparent;
+  color: #9FB8C0;
+  font-size: 0.69rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  padding: 10px 0 0 16px;
+  cursor: pointer;
+}
+.creatool-switch:hover { color: #fff; }
 
 @media (max-width: 980px) {
   .nav-toggle { display: inline-flex; }

@@ -1,0 +1,5 @@
+{
+  "_readme": "Registr akcí a animací pro Azervera CREATOOL. Doplňuje ho agent, když zapisuje export: id, name, description, params, source.",
+  "actions": [],
+  "animations": []
+}

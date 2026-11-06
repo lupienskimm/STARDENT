@@ -1,0 +1,2451 @@
+{
+ "name": "Knihovna prvků",
+ "packs": [
+  {
+   "id": "dirty-enough",
+   "name": "Dirty Enough",
+   "items": [
+    {
+     "id": "dirty-enough/sipka-01-rovne-doprava",
+     "name": "Šipka · rovně doprava",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-01-rovne-doprava.svg",
+     "w": 164.9,
+     "h": 44.6
+    },
+    {
+     "id": "dirty-enough/sipka-02-rovne-doleva",
+     "name": "Šipka · rovně doleva",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-02-rovne-doleva.svg",
+     "w": 163.6,
+     "h": 45.9
+    },
+    {
+     "id": "dirty-enough/sipka-03-rovne-nahoru",
+     "name": "Šipka · rovně nahoru",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-03-rovne-nahoru.svg",
+     "w": 43.3,
+     "h": 168.2
+    },
+    {
+     "id": "dirty-enough/sipka-04-rovne-dolu",
+     "name": "Šipka · rovně dolů",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-04-rovne-dolu.svg",
+     "w": 46.8,
+     "h": 167.3
+    },
+    {
+     "id": "dirty-enough/sipka-05-oblouk-doprava",
+     "name": "Šipka · oblouk doprava",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-05-oblouk-doprava.svg",
+     "w": 170.2,
+     "h": 97.5
+    },
+    {
+     "id": "dirty-enough/sipka-06-oblouk-doleva",
+     "name": "Šipka · oblouk doleva",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-06-oblouk-doleva.svg",
+     "w": 171.3,
+     "h": 97.7
+    },
+    {
+     "id": "dirty-enough/sipka-07-klicka-doprava",
+     "name": "Šipka · klička doprava",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-07-klicka-doprava.svg",
+     "w": 175.6,
+     "h": 69.8
+    },
+    {
+     "id": "dirty-enough/sipka-08-klicka-doleva",
+     "name": "Šipka · klička doleva",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-08-klicka-doleva.svg",
+     "w": 175.6,
+     "h": 73.5
+    },
+    {
+     "id": "dirty-enough/sipka-09-vlnovka-doprava",
+     "name": "Šipka · vlnovka doprava",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-09-vlnovka-doprava.svg",
+     "w": 166.4,
+     "h": 65.6
+    },
+    {
+     "id": "dirty-enough/sipka-10-vlnovka-doleva",
+     "name": "Šipka · vlnovka doleva",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-10-vlnovka-doleva.svg",
+     "w": 167.9,
+     "h": 62.2
+    },
+    {
+     "id": "dirty-enough/sipka-11-spirala",
+     "name": "Šipka · spirála",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-11-spirala.svg",
+     "w": 154.5,
+     "h": 124.6
+    },
+    {
+     "id": "dirty-enough/sipka-12-otocka-u",
+     "name": "Šipka · otočka U",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-12-otocka-u.svg",
+     "w": 106.1,
+     "h": 140.9
+    },
+    {
+     "id": "dirty-enough/sipka-13-zatacka-doprava-dolu",
+     "name": "Šipka · zatáčka doprava dolů",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-13-zatacka-doprava-dolu.svg",
+     "w": 156,
+     "h": 141.9
+    },
+    {
+     "id": "dirty-enough/sipka-14-zatacka-doleva-dolu",
+     "name": "Šipka · zatáčka doleva dolů",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-14-zatacka-doleva-dolu.svg",
+     "w": 154.2,
+     "h": 142
+    },
+    {
+     "id": "dirty-enough/sipka-15-s-krivka",
+     "name": "Šipka · esíčko",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-15-s-krivka.svg",
+     "w": 160.9,
+     "h": 162.3
+    },
+    {
+     "id": "dirty-enough/sipka-16-kruhova",
+     "name": "Šipka · kruhová",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-16-kruhova.svg",
+     "w": 144.4,
+     "h": 156.8
+    },
+    {
+     "id": "dirty-enough/sipka-17-skok",
+     "name": "Šipka · skok",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-17-skok.svg",
+     "w": 176.3,
+     "h": 77.3
+    },
+    {
+     "id": "dirty-enough/sipka-18-dvojita",
+     "name": "Šipka · dvojitá",
+     "group": "Šipky",
+     "src": "dirty-enough/sipky/sipka-18-dvojita.svg",
+     "w": 159.1,
+     "h": 43.4
+    },
+    {
+     "id": "dirty-enough/krouzek-01-volny",
+     "name": "Kroužek · volný",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-01-volny.svg",
+     "w": 347,
+     "h": 142.6
+    },
+    {
+     "id": "dirty-enough/krouzek-02-s-ocaskem",
+     "name": "Kroužek · s ocáskem",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-02-s-ocaskem.svg",
+     "w": 371.3,
+     "h": 133.1
+    },
+    {
+     "id": "dirty-enough/krouzek-03-trojity",
+     "name": "Kroužek · trojitý",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-03-trojity.svg",
+     "w": 348.1,
+     "h": 132.2
+    },
+    {
+     "id": "dirty-enough/krouzek-04-sikmy",
+     "name": "Kroužek · šikmý",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-04-sikmy.svg",
+     "w": 360.6,
+     "h": 127.7
+    },
+    {
+     "id": "dirty-enough/krouzek-05-otevreny",
+     "name": "Kroužek · otevřený",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-05-otevreny.svg",
+     "w": 354.8,
+     "h": 131.3
+    },
+    {
+     "id": "dirty-enough/krouzek-06-roztreseny",
+     "name": "Kroužek · roztřesený",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-06-roztreseny.svg",
+     "w": 368.3,
+     "h": 136.8
+    },
+    {
+     "id": "dirty-enough/krouzek-07-prekrizeny-konec",
+     "name": "Kroužek · překřížený konec",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-07-prekrizeny-konec.svg",
+     "w": 364.2,
+     "h": 148.6
+    },
+    {
+     "id": "dirty-enough/krouzek-08-zaobleny-obdelnik",
+     "name": "Kroužek · zaoblený obdélník",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-08-zaobleny-obdelnik.svg",
+     "w": 377.5,
+     "h": 160.5
+    },
+    {
+     "id": "dirty-enough/krouzek-09-kulaty",
+     "name": "Kroužek · kulatý",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-09-kulaty.svg",
+     "w": 190.8,
+     "h": 189.7
+    },
+    {
+     "id": "dirty-enough/krouzek-10-kulaty-dvojity",
+     "name": "Kroužek · kulatý dvojitý",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-10-kulaty-dvojity.svg",
+     "w": 181.9,
+     "h": 175.2
+    },
+    {
+     "id": "dirty-enough/krouzek-11-srdce",
+     "name": "Kroužek · srdce",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-11-srdce.svg",
+     "w": 195.8,
+     "h": 174.9
+    },
+    {
+     "id": "dirty-enough/krouzek-12-hvezdice-odznak",
+     "name": "Kroužek · hvězdice odznak",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-12-hvezdice-odznak.svg",
+     "w": 234.7,
+     "h": 231.1
+    },
+    {
+     "id": "dirty-enough/krouzek-13-mrak",
+     "name": "Kroužek · mrak",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/krouzek-13-mrak.svg",
+     "w": 378.5,
+     "h": 189.9
+    },
+    {
+     "id": "dirty-enough/zakrouzkovani-01",
+     "name": "Zakroužkování",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/zakrouzkovani-01.svg",
+     "w": 420.4,
+     "h": 153
+    },
+    {
+     "id": "dirty-enough/zakrouzkovani-02-dvakrat",
+     "name": "Zakroužkování · dvakrát",
+     "group": "Kroužky",
+     "src": "dirty-enough/krouzky/zakrouzkovani-02-dvakrat.svg",
+     "w": 389.1,
+     "h": 144.9
+    },
+    {
+     "id": "dirty-enough/podtrzeni-01-rovne",
+     "name": "Podtržení · rovně",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-01-rovne.svg",
+     "w": 398.1,
+     "h": 26.4
+    },
+    {
+     "id": "dirty-enough/podtrzeni-02-dvojite",
+     "name": "Podtržení · dvojité",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-02-dvojite.svg",
+     "w": 397.7,
+     "h": 42.8
+    },
+    {
+     "id": "dirty-enough/podtrzeni-03-vlnovka",
+     "name": "Podtržení · vlnovka",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-03-vlnovka.svg",
+     "w": 399.2,
+     "h": 44.7
+    },
+    {
+     "id": "dirty-enough/podtrzeni-04-cikcak",
+     "name": "Podtržení · cikcak",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-04-cikcak.svg",
+     "w": 398.3,
+     "h": 42.6
+    },
+    {
+     "id": "dirty-enough/podtrzeni-05-smycky",
+     "name": "Podtržení · smyčky",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-05-smycky.svg",
+     "w": 386,
+     "h": 49.3
+    },
+    {
+     "id": "dirty-enough/podtrzeni-06-tah-stetcem",
+     "name": "Podtržení · tah štětcem",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-06-tah-stetcem.svg",
+     "w": 394.5,
+     "h": 40.7
+    },
+    {
+     "id": "dirty-enough/podtrzeni-07-usmev",
+     "name": "Podtržení · úsměv",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-07-usmev.svg",
+     "w": 398.7,
+     "h": 59.8
+    },
+    {
+     "id": "dirty-enough/podtrzeni-08-svih",
+     "name": "Podtržení · švih",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-08-svih.svg",
+     "w": 385.3,
+     "h": 44
+    },
+    {
+     "id": "dirty-enough/podtrzeni-09-sipka",
+     "name": "Podtržení · šipka",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-09-sipka.svg",
+     "w": 394,
+     "h": 47.7
+    },
+    {
+     "id": "dirty-enough/podtrzeni-10-dvojita-vlnovka",
+     "name": "Podtržení · dvojitá vlnovka",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-10-dvojita-vlnovka.svg",
+     "w": 400.8,
+     "h": 57.8
+    },
+    {
+     "id": "dirty-enough/podtrzeni-11-zuzujici",
+     "name": "Podtržení · zužující",
+     "group": "Podtržení",
+     "src": "dirty-enough/podtrzeni/podtrzeni-11-zuzujici.svg",
+     "w": 406.4,
+     "h": 29.3
+    },
+    {
+     "id": "dirty-enough/zvyrazneni-scribble",
+     "name": "Zvýraznění · čmáranice",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyrazneni-scribble.svg",
+     "w": 394.4,
+     "h": 74.1
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-01-plny",
+     "name": "Zvýrazňovač · plný",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-01-plny.svg",
+     "w": 402,
+     "h": 79.1
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-02-sikmy",
+     "name": "Zvýrazňovač · šikmý",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-02-sikmy.svg",
+     "w": 398.9,
+     "h": 85.8
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-03-spodni-pul",
+     "name": "Zvýrazňovač · spodní půl",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-03-spodni-pul.svg",
+     "w": 403.6,
+     "h": 55.8
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-04-tahy",
+     "name": "Zvýrazňovač · tahy",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-04-tahy.svg",
+     "w": 386,
+     "h": 77.2
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-05-srafy",
+     "name": "Zvýrazňovač · šrafy",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-05-srafy.svg",
+     "w": 415.4,
+     "h": 78.5
+    },
+    {
+     "id": "dirty-enough/zvyraznovac-06-krizove-srafy",
+     "name": "Zvýrazňovač · křížové šrafy",
+     "group": "Zvýrazňovače",
+     "src": "dirty-enough/zvyraznovace/zvyraznovac-06-krizove-srafy.svg",
+     "w": 410.2,
+     "h": 77.2
+    },
+    {
+     "id": "dirty-enough/preskrtnuti-01",
+     "name": "Přeškrtnutí",
+     "group": "Přeškrtnutí",
+     "src": "dirty-enough/preskrtnuti/preskrtnuti-01.svg",
+     "w": 406,
+     "h": 35.5
+    },
+    {
+     "id": "dirty-enough/preskrtnuti-02-dvojite",
+     "name": "Přeškrtnutí · dvojité",
+     "group": "Přeškrtnutí",
+     "src": "dirty-enough/preskrtnuti/preskrtnuti-02-dvojite.svg",
+     "w": 405.7,
+     "h": 40.3
+    },
+    {
+     "id": "dirty-enough/preskrtnuti-03-cmaranice",
+     "name": "Přeškrtnutí · čmáranice",
+     "group": "Přeškrtnutí",
+     "src": "dirty-enough/preskrtnuti/preskrtnuti-03-cmaranice.svg",
+     "w": 394.3,
+     "h": 60.3
+    },
+    {
+     "id": "dirty-enough/preskrtnuti-04-smycky",
+     "name": "Přeškrtnutí · smyčky",
+     "group": "Přeškrtnutí",
+     "src": "dirty-enough/preskrtnuti/preskrtnuti-04-smycky.svg",
+     "w": 396.4,
+     "h": 59.9
+    },
+    {
+     "id": "dirty-enough/ramecek-01-nacrt",
+     "name": "Rámeček · náčrt",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/ramecek-01-nacrt.svg",
+     "w": 408.6,
+     "h": 165.8
+    },
+    {
+     "id": "dirty-enough/ramecek-02-rohy",
+     "name": "Rámeček · rohy",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/ramecek-02-rohy.svg",
+     "w": 399.4,
+     "h": 156
+    },
+    {
+     "id": "dirty-enough/ramecek-03-hranate-zavorky",
+     "name": "Rámeček · hranaté závorky",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/ramecek-03-hranate-zavorky.svg",
+     "w": 393,
+     "h": 155.6
+    },
+    {
+     "id": "dirty-enough/ramecek-04-kulate-zavorky",
+     "name": "Rámeček · kulaté závorky",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/ramecek-04-kulate-zavorky.svg",
+     "w": 397.7,
+     "h": 159.3
+    },
+    {
+     "id": "dirty-enough/ramecek-obdelnik",
+     "name": "Rámeček · obdélník",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/ramecek-obdelnik.svg",
+     "w": 389.3,
+     "h": 187
+    },
+    {
+     "id": "dirty-enough/stitek-banner",
+     "name": "Štítek",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/stitek-banner.svg",
+     "w": 403.9,
+     "h": 107.5
+    },
+    {
+     "id": "dirty-enough/zavorka-leva",
+     "name": "Závorka · levá",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/zavorka-leva.svg",
+     "w": 58.4,
+     "h": 184.8
+    },
+    {
+     "id": "dirty-enough/zavorka-prava",
+     "name": "Závorka · pravá",
+     "group": "Rámečky a závorky",
+     "src": "dirty-enough/ramecky-a-zavorky/zavorka-prava.svg",
+     "w": 59.3,
+     "h": 187.7
+    },
+    {
+     "id": "dirty-enough/akcent-01-zare-kolem-slova",
+     "name": "Akcent · záře kolem slova",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-01-zare-kolem-slova.svg",
+     "w": 378.9,
+     "h": 102.7
+    },
+    {
+     "id": "dirty-enough/akcent-02-roh-vlevo",
+     "name": "Akcent · roh vlevo",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-02-roh-vlevo.svg",
+     "w": 86.3,
+     "h": 91.3
+    },
+    {
+     "id": "dirty-enough/akcent-03-roh-vpravo",
+     "name": "Akcent · roh vpravo",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-03-roh-vpravo.svg",
+     "w": 85.4,
+     "h": 88.8
+    },
+    {
+     "id": "dirty-enough/akcent-04-trpytky",
+     "name": "Akcent · třpytky",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-04-trpytky.svg",
+     "w": 216.9,
+     "h": 137
+    },
+    {
+     "id": "dirty-enough/akcent-05-sipka-na-slovo",
+     "name": "Akcent · šipka na slovo",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-05-sipka-na-slovo.svg",
+     "w": 171.7,
+     "h": 178.5
+    },
+    {
+     "id": "dirty-enough/akcent-06-vykricniky",
+     "name": "Akcent · vykřičníky",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-06-vykricniky.svg",
+     "w": 95.8,
+     "h": 121.9
+    },
+    {
+     "id": "dirty-enough/akcent-carky-zare",
+     "name": "Akcent · čárky záře",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/akcent-carky-zare.svg",
+     "w": 106.1,
+     "h": 81.8
+    },
+    {
+     "id": "dirty-enough/klubko-scribble",
+     "name": "Klubko",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/klubko-scribble.svg",
+     "w": 170.8,
+     "h": 141.9
+    },
+    {
+     "id": "dirty-enough/spirala-doodle",
+     "name": "Spirála",
+     "group": "Akcenty a čmáranice",
+     "src": "dirty-enough/akcenty-a-cmaranice/spirala-doodle.svg",
+     "w": 159.1,
+     "h": 148.5
+    },
+    {
+     "id": "dirty-enough/oddelovac-01-vlnka",
+     "name": "Oddělovač · vlnka",
+     "group": "Oddělovače",
+     "src": "dirty-enough/oddelovace/oddelovac-01-vlnka.svg",
+     "w": 607.2,
+     "h": 45
+    },
+    {
+     "id": "dirty-enough/oddelovac-02-hvezdicky",
+     "name": "Oddělovač · hvězdičky",
+     "group": "Oddělovače",
+     "src": "dirty-enough/oddelovace/oddelovac-02-hvezdicky.svg",
+     "w": 607.6,
+     "h": 61.3
+    },
+    {
+     "id": "dirty-enough/oddelovac-03-tecky",
+     "name": "Oddělovač · tečky",
+     "group": "Oddělovače",
+     "src": "dirty-enough/oddelovace/oddelovac-03-tecky.svg",
+     "w": 590.9,
+     "h": 38.8
+    },
+    {
+     "id": "dirty-enough/checkbox-zaskrtnuty",
+     "name": "Zaškrtnuté políčko",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/checkbox-zaskrtnuty.svg",
+     "w": 167.1,
+     "h": 156.6
+    },
+    {
+     "id": "dirty-enough/fajfka",
+     "name": "Fajfka",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/fajfka.svg",
+     "w": 145.8,
+     "h": 129.8
+    },
+    {
+     "id": "dirty-enough/krizek-x",
+     "name": "Křížek",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/krizek-x.svg",
+     "w": 123.4,
+     "h": 125.4
+    },
+    {
+     "id": "dirty-enough/otaznik",
+     "name": "Otazník",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/otaznik.svg",
+     "w": 87,
+     "h": 157.2
+    },
+    {
+     "id": "dirty-enough/plus",
+     "name": "Plus",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/plus.svg",
+     "w": 139.7,
+     "h": 137.7
+    },
+    {
+     "id": "dirty-enough/vykricnik",
+     "name": "Vykřičník",
+     "group": "Značky",
+     "src": "dirty-enough/znacky/vykricnik.svg",
+     "w": 24.1,
+     "h": 149.8
+    },
+    {
+     "id": "dirty-enough/hvezdicka-01",
+     "name": "Hvězdička",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-01.svg",
+     "w": 167.8,
+     "h": 158
+    },
+    {
+     "id": "dirty-enough/hvezdicka-02-trpytka",
+     "name": "Hvězdička · třpytka",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-02-trpytka.svg",
+     "w": 165.7,
+     "h": 167.1
+    },
+    {
+     "id": "dirty-enough/hvezdicka-03-jednim-tahem",
+     "name": "Hvězdička · jedním tahem",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-03-jednim-tahem.svg",
+     "w": 159.2,
+     "h": 155.3
+    },
+    {
+     "id": "dirty-enough/hvezdicka-04-mala-trojice",
+     "name": "Hvězdička · malá trojice",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-04-mala-trojice.svg",
+     "w": 163.6,
+     "h": 154.4
+    },
+    {
+     "id": "dirty-enough/hvezdicka-05-krizek",
+     "name": "Hvězdička · křížek",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-05-krizek.svg",
+     "w": 159.1,
+     "h": 158.6
+    },
+    {
+     "id": "dirty-enough/hvezdicka-6-cip-asterisk",
+     "name": "Hvězdička · šesticípá",
+     "group": "Hvězdičky",
+     "src": "dirty-enough/hvezdicky/hvezdicka-6-cip-asterisk.svg",
+     "w": 155.6,
+     "h": 152.5
+    },
+    {
+     "id": "dirty-enough/srdce-01",
+     "name": "Srdce",
+     "group": "Srdce",
+     "src": "dirty-enough/srdce/srdce-01.svg",
+     "w": 146,
+     "h": 130.2
+    },
+    {
+     "id": "dirty-enough/srdce-02-vybarvene",
+     "name": "Srdce · vybarvené",
+     "group": "Srdce",
+     "src": "dirty-enough/srdce/srdce-02-vybarvene.svg",
+     "w": 147,
+     "h": 130.5
+    },
+    {
+     "id": "dirty-enough/srdce-03-dvojite",
+     "name": "Srdce · dvojité",
+     "group": "Srdce",
+     "src": "dirty-enough/srdce/srdce-03-dvojite.svg",
+     "w": 140.5,
+     "h": 110.1
+    },
+    {
+     "id": "dirty-enough/srdce-04-se-sipem",
+     "name": "Srdce · se šípem",
+     "group": "Srdce",
+     "src": "dirty-enough/srdce/srdce-04-se-sipem.svg",
+     "w": 176.7,
+     "h": 118.8
+    },
+    {
+     "id": "dirty-enough/srdce-05-zlomene",
+     "name": "Srdce · zlomené",
+     "group": "Srdce",
+     "src": "dirty-enough/srdce/srdce-05-zlomene.svg",
+     "w": 145,
+     "h": 130.8
+    },
+    {
+     "id": "dirty-enough/smajlik-01-usmev",
+     "name": "Smajlík · úsměv",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-01-usmev.svg",
+     "w": 167.1,
+     "h": 163.3
+    },
+    {
+     "id": "dirty-enough/smajlik-02-velky-usmev",
+     "name": "Smajlík · velký úsměv",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-02-velky-usmev.svg",
+     "w": 167.2,
+     "h": 160.9
+    },
+    {
+     "id": "dirty-enough/smajlik-03-mrk",
+     "name": "Smajlík · mrk",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-03-mrk.svg",
+     "w": 168.9,
+     "h": 162.7
+    },
+    {
+     "id": "dirty-enough/smajlik-04-smutny",
+     "name": "Smajlík · smutný",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-04-smutny.svg",
+     "w": 168.1,
+     "h": 162.5
+    },
+    {
+     "id": "dirty-enough/smajlik-05-prekvapeny",
+     "name": "Smajlík · překvapený",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-05-prekvapeny.svg",
+     "w": 168.7,
+     "h": 162.7
+    },
+    {
+     "id": "dirty-enough/smajlik-06-jazyk",
+     "name": "Smajlík · jazyk",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-06-jazyk.svg",
+     "w": 167.3,
+     "h": 162.2
+    },
+    {
+     "id": "dirty-enough/smajlik-07-cool",
+     "name": "Smajlík · cool",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-07-cool.svg",
+     "w": 167.8,
+     "h": 162.3
+    },
+    {
+     "id": "dirty-enough/smajlik-08-neutral",
+     "name": "Smajlík · neutrál",
+     "group": "Smajlíci",
+     "src": "dirty-enough/smajlici/smajlik-08-neutral.svg",
+     "w": 168.6,
+     "h": 161.5
+    },
+    {
+     "id": "dirty-enough/liska-01-logo-obrys",
+     "name": "Liška · obrys loga",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-01-logo-obrys.svg",
+     "w": 121,
+     "h": 190.7
+    },
+    {
+     "id": "dirty-enough/liska-02-logo-jednim-tahem",
+     "name": "Liška · logo jedním tahem",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-02-logo-jednim-tahem.svg",
+     "w": 107.3,
+     "h": 162.3
+    },
+    {
+     "id": "dirty-enough/liska-03-s-oblicejem",
+     "name": "Liška · s obličejem",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-03-s-oblicejem.svg",
+     "w": 145.9,
+     "h": 191.3
+    },
+    {
+     "id": "dirty-enough/liska-04-v-kruhu",
+     "name": "Liška · v kruhu",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-04-v-kruhu.svg",
+     "w": 189,
+     "h": 189.5
+    },
+    {
+     "id": "dirty-enough/liska-05-hlava-mini-ikona",
+     "name": "Liška · malá ikona",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-05-hlava-mini-ikona.svg",
+     "w": 124.8,
+     "h": 181.5
+    },
+    {
+     "id": "dirty-enough/liska-06-sraf",
+     "name": "Liška · šrafovaná",
+     "group": "Liška",
+     "src": "dirty-enough/liska/liska-06-sraf.svg",
+     "w": 119.6,
+     "h": 191.3
+    },
+    {
+     "id": "dirty-enough/lisky-stavi-a",
+     "name": "Lišky staví A",
+     "group": "Liška",
+     "src": "dirty-enough/liska/lisky-stavi-a.png",
+     "w": 2800,
+     "h": 1098
+    },
+    {
+     "id": "dirty-enough/houba",
+     "name": "Houba",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/houba.svg",
+     "w": 175.8,
+     "h": 161.4
+    },
+    {
+     "id": "dirty-enough/kaktus",
+     "name": "Kaktus",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kaktus.svg",
+     "w": 132.5,
+     "h": 172.8
+    },
+    {
+     "id": "dirty-enough/kvetina-01-sedmikraska",
+     "name": "Květina · sedmikráska",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-01-sedmikraska.svg",
+     "w": 129.7,
+     "h": 129.2
+    },
+    {
+     "id": "dirty-enough/kvetina-02-pet-platku",
+     "name": "Květina · pět plátků",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-02-pet-platku.svg",
+     "w": 115.6,
+     "h": 170.1
+    },
+    {
+     "id": "dirty-enough/kvetina-03-tulipan",
+     "name": "Květina · tulipán",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-03-tulipan.svg",
+     "w": 81.4,
+     "h": 154.3
+    },
+    {
+     "id": "dirty-enough/kvetina-04-se-stonkem",
+     "name": "Květina · se stonkem",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-04-se-stonkem.svg",
+     "w": 122.9,
+     "h": 188
+    },
+    {
+     "id": "dirty-enough/kvetina-05-spirala",
+     "name": "Květina · spirála",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-05-spirala.svg",
+     "w": 118,
+     "h": 153.7
+    },
+    {
+     "id": "dirty-enough/kvetina-06-ctyrlistek",
+     "name": "Květina · čtyřlístek",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-06-ctyrlistek.svg",
+     "w": 122.6,
+     "h": 155.3
+    },
+    {
+     "id": "dirty-enough/kvetina-07-zvonek",
+     "name": "Květina · zvonek",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-07-zvonek.svg",
+     "w": 147.2,
+     "h": 126.6
+    },
+    {
+     "id": "dirty-enough/kvetina-08-mala-trojice",
+     "name": "Květina · malá trojice",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/kvetina-08-mala-trojice.svg",
+     "w": 131.4,
+     "h": 135.8
+    },
+    {
+     "id": "dirty-enough/list",
+     "name": "List",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/list.svg",
+     "w": 167,
+     "h": 174.9
+    },
+    {
+     "id": "dirty-enough/palma",
+     "name": "Palma",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/palma.svg",
+     "w": 170.5,
+     "h": 195
+    },
+    {
+     "id": "dirty-enough/rostlinka",
+     "name": "Rostlinka",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/rostlinka.svg",
+     "w": 126.5,
+     "h": 152.4
+    },
+    {
+     "id": "dirty-enough/strom",
+     "name": "Strom",
+     "group": "Květiny a rostliny",
+     "src": "dirty-enough/kvetiny-a-rostliny/strom.svg",
+     "w": 169.7,
+     "h": 190
+    },
+    {
+     "id": "dirty-enough/blesk",
+     "name": "Blesk",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/blesk.svg",
+     "w": 92.8,
+     "h": 178.4
+    },
+    {
+     "id": "dirty-enough/destnik",
+     "name": "Deštník",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/destnik.svg",
+     "w": 171.9,
+     "h": 182.1
+    },
+    {
+     "id": "dirty-enough/duha",
+     "name": "Duha",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/duha.svg",
+     "w": 175.6,
+     "h": 115.1
+    },
+    {
+     "id": "dirty-enough/hory",
+     "name": "Hory",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/hory.svg",
+     "w": 194,
+     "h": 168.3
+    },
+    {
+     "id": "dirty-enough/kapka",
+     "name": "Kapka",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/kapka.svg",
+     "w": 98.1,
+     "h": 163.2
+    },
+    {
+     "id": "dirty-enough/mesic",
+     "name": "Měsíc",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/mesic.svg",
+     "w": 155.7,
+     "h": 150.3
+    },
+    {
+     "id": "dirty-enough/mracek-01",
+     "name": "Mráček",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/mracek-01.svg",
+     "w": 167,
+     "h": 104.7
+    },
+    {
+     "id": "dirty-enough/mracek-02-dest",
+     "name": "Mráček · déšť",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/mracek-02-dest.svg",
+     "w": 153.9,
+     "h": 144.1
+    },
+    {
+     "id": "dirty-enough/mracek-03-se-sluncem",
+     "name": "Mráček · se sluncem",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/mracek-03-se-sluncem.svg",
+     "w": 171.5,
+     "h": 154.2
+    },
+    {
+     "id": "dirty-enough/ohen",
+     "name": "Oheň",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/ohen.svg",
+     "w": 120.9,
+     "h": 186.4
+    },
+    {
+     "id": "dirty-enough/slunicko-01",
+     "name": "Sluníčko",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/slunicko-01.svg",
+     "w": 158.2,
+     "h": 143.3
+    },
+    {
+     "id": "dirty-enough/slunicko-02-s-oblicejem",
+     "name": "Sluníčko · s obličejem",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/slunicko-02-s-oblicejem.svg",
+     "w": 177.9,
+     "h": 176.5
+    },
+    {
+     "id": "dirty-enough/slunicko-03-spirala",
+     "name": "Sluníčko · spirála",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/slunicko-03-spirala.svg",
+     "w": 166.5,
+     "h": 165.4
+    },
+    {
+     "id": "dirty-enough/vlna",
+     "name": "Vlna",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/vlna.svg",
+     "w": 192.8,
+     "h": 146.7
+    },
+    {
+     "id": "dirty-enough/vlocka",
+     "name": "Vločka",
+     "group": "Počasí a příroda",
+     "src": "dirty-enough/pocasi-a-priroda/vlocka.svg",
+     "w": 150.6,
+     "h": 168.8
+    },
+    {
+     "id": "dirty-enough/kocici-hlava",
+     "name": "Kočičí hlava",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/kocici-hlava.svg",
+     "w": 164,
+     "h": 157.9
+    },
+    {
+     "id": "dirty-enough/motyl",
+     "name": "Motýl",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/motyl.svg",
+     "w": 164.1,
+     "h": 153.8
+    },
+    {
+     "id": "dirty-enough/muslicka",
+     "name": "Mušlička",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/muslicka.svg",
+     "w": 152.3,
+     "h": 114.8
+    },
+    {
+     "id": "dirty-enough/pes-hlava",
+     "name": "Pes · hlava",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/pes-hlava.svg",
+     "w": 170.5,
+     "h": 132.9
+    },
+    {
+     "id": "dirty-enough/pirko",
+     "name": "Pírko",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/pirko.svg",
+     "w": 152.9,
+     "h": 175.6
+    },
+    {
+     "id": "dirty-enough/ptacek",
+     "name": "Ptáček",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/ptacek.svg",
+     "w": 194.6,
+     "h": 133.9
+    },
+    {
+     "id": "dirty-enough/rybka",
+     "name": "Rybka",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/rybka.svg",
+     "w": 166.1,
+     "h": 89.9
+    },
+    {
+     "id": "dirty-enough/snek",
+     "name": "Šnek",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/snek.svg",
+     "w": 160.1,
+     "h": 107.6
+    },
+    {
+     "id": "dirty-enough/sova",
+     "name": "Sova",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/sova.svg",
+     "w": 134.4,
+     "h": 150.6
+    },
+    {
+     "id": "dirty-enough/tlapka",
+     "name": "Tlapka",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/tlapka.svg",
+     "w": 135.2,
+     "h": 132.4
+    },
+    {
+     "id": "dirty-enough/vcela",
+     "name": "Včela",
+     "group": "Zvířata",
+     "src": "dirty-enough/zvirata/vcela.svg",
+     "w": 144.9,
+     "h": 146.8
+    },
+    {
+     "id": "dirty-enough/avokado",
+     "name": "Avokádo",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/avokado.svg",
+     "w": 134.3,
+     "h": 183.8
+    },
+    {
+     "id": "dirty-enough/banan",
+     "name": "Banán",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/banan.svg",
+     "w": 157.7,
+     "h": 118.2
+    },
+    {
+     "id": "dirty-enough/burger",
+     "name": "Burger",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/burger.svg",
+     "w": 165.5,
+     "h": 143.7
+    },
+    {
+     "id": "dirty-enough/citron",
+     "name": "Citron",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/citron.svg",
+     "w": 183.7,
+     "h": 153.2
+    },
+    {
+     "id": "dirty-enough/croissant",
+     "name": "Croissant",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/croissant.svg",
+     "w": 169.6,
+     "h": 72.6
+    },
+    {
+     "id": "dirty-enough/donut",
+     "name": "Donut",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/donut.svg",
+     "w": 163.6,
+     "h": 138.8
+    },
+    {
+     "id": "dirty-enough/dort",
+     "name": "Dort",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/dort.svg",
+     "w": 160.2,
+     "h": 165.2
+    },
+    {
+     "id": "dirty-enough/hrnek-kafe",
+     "name": "Hrnek kafe",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/hrnek-kafe.svg",
+     "w": 137.2,
+     "h": 167.4
+    },
+    {
+     "id": "dirty-enough/jablko",
+     "name": "Jablko",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/jablko.svg",
+     "w": 160.8,
+     "h": 173.5
+    },
+    {
+     "id": "dirty-enough/koktejl",
+     "name": "Koktejl",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/koktejl.svg",
+     "w": 151.8,
+     "h": 183.1
+    },
+    {
+     "id": "dirty-enough/lahev",
+     "name": "Láhev",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/lahev.svg",
+     "w": 97.8,
+     "h": 187.6
+    },
+    {
+     "id": "dirty-enough/meloun",
+     "name": "Meloun",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/meloun.svg",
+     "w": 181.3,
+     "h": 85.9
+    },
+    {
+     "id": "dirty-enough/pivo",
+     "name": "Pivo",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/pivo.svg",
+     "w": 154,
+     "h": 174.4
+    },
+    {
+     "id": "dirty-enough/pizza",
+     "name": "Pizza",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/pizza.svg",
+     "w": 163.1,
+     "h": 166.6
+    },
+    {
+     "id": "dirty-enough/sklenice-vina",
+     "name": "Sklenice vína",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/sklenice-vina.svg",
+     "w": 105.7,
+     "h": 167.9
+    },
+    {
+     "id": "dirty-enough/zmrzlina",
+     "name": "Zmrzlina",
+     "group": "Jídlo a pití",
+     "src": "dirty-enough/jidlo-a-piti/zmrzlina.svg",
+     "w": 107.2,
+     "h": 178.9
+    },
+    {
+     "id": "dirty-enough/baterie",
+     "name": "Baterie",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/baterie.svg",
+     "w": 177.4,
+     "h": 99
+    },
+    {
+     "id": "dirty-enough/cloud-upload",
+     "name": "Nahrát do cloudu",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/cloud-upload.svg",
+     "w": 160.9,
+     "h": 129.2
+    },
+    {
+     "id": "dirty-enough/dokument",
+     "name": "Dokument",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/dokument.svg",
+     "w": 143.1,
+     "h": 186.1
+    },
+    {
+     "id": "dirty-enough/gamepad",
+     "name": "Gamepad",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/gamepad.svg",
+     "w": 172.1,
+     "h": 103.7
+    },
+    {
+     "id": "dirty-enough/globus-web",
+     "name": "Globus · web",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/globus-web.svg",
+     "w": 173.1,
+     "h": 172.9
+    },
+    {
+     "id": "dirty-enough/kod",
+     "name": "Kód",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/kod.svg",
+     "w": 176.5,
+     "h": 137.2
+    },
+    {
+     "id": "dirty-enough/kurzor-klik",
+     "name": "Kurzor · klik",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/kurzor-klik.svg",
+     "w": 124.7,
+     "h": 178.6
+    },
+    {
+     "id": "dirty-enough/laptop",
+     "name": "Laptop",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/laptop.svg",
+     "w": 182.1,
+     "h": 153.3
+    },
+    {
+     "id": "dirty-enough/ozubene-kolo",
+     "name": "Ozubené kolo",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/ozubene-kolo.svg",
+     "w": 173.8,
+     "h": 170.8
+    },
+    {
+     "id": "dirty-enough/prohlizec",
+     "name": "Prohlížeč",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/prohlizec.svg",
+     "w": 187.5,
+     "h": 164.2
+    },
+    {
+     "id": "dirty-enough/qr-kod",
+     "name": "QR kód",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/qr-kod.svg",
+     "w": 173.7,
+     "h": 173.5
+    },
+    {
+     "id": "dirty-enough/responzivni",
+     "name": "Responzivní",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/responzivni.svg",
+     "w": 188.3,
+     "h": 160
+    },
+    {
+     "id": "dirty-enough/robot",
+     "name": "Robot",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/robot.svg",
+     "w": 147.3,
+     "h": 193
+    },
+    {
+     "id": "dirty-enough/slozka",
+     "name": "Složka",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/slozka.svg",
+     "w": 186,
+     "h": 148
+    },
+    {
+     "id": "dirty-enough/stahnout",
+     "name": "Stáhnout",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/stahnout.svg",
+     "w": 165.8,
+     "h": 167
+    },
+    {
+     "id": "dirty-enough/telefon",
+     "name": "Telefon",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/telefon.svg",
+     "w": 105.4,
+     "h": 181
+    },
+    {
+     "id": "dirty-enough/webova-stranka-wireframe",
+     "name": "Webová stránka · wireframe",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/webova-stranka-wireframe.svg",
+     "w": 175.6,
+     "h": 189.5
+    },
+    {
+     "id": "dirty-enough/wifi",
+     "name": "Wi-Fi",
+     "group": "Web a technika",
+     "src": "dirty-enough/web-a-technika/wifi.svg",
+     "w": 140.1,
+     "h": 104
+    },
+    {
+     "id": "dirty-enough/design-bezier-krivka",
+     "name": "Bézierova křivka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-bezier-krivka.svg",
+     "w": 183.2,
+     "h": 151.8
+    },
+    {
+     "id": "dirty-enough/design-kostka-3d",
+     "name": "3D kostka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-kostka-3d.svg",
+     "w": 162.5,
+     "h": 172.4
+    },
+    {
+     "id": "dirty-enough/design-kouzelna-hulka",
+     "name": "Kouzelná hůlka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-kouzelna-hulka.svg",
+     "w": 177.2,
+     "h": 173.5
+    },
+    {
+     "id": "dirty-enough/design-monitor",
+     "name": "Monitor",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-monitor.svg",
+     "w": 193.1,
+     "h": 173.5
+    },
+    {
+     "id": "dirty-enough/design-mrizka-layout",
+     "name": "Mřížka layoutu",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-mrizka-layout.svg",
+     "w": 182.9,
+     "h": 183.1
+    },
+    {
+     "id": "dirty-enough/design-mys-kurzor",
+     "name": "Myš",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-mys-kurzor.svg",
+     "w": 101,
+     "h": 188
+    },
+    {
+     "id": "dirty-enough/design-orez-crop",
+     "name": "Ořez",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-orez-crop.svg",
+     "w": 179.1,
+     "h": 184.3
+    },
+    {
+     "id": "dirty-enough/design-pero-hrot",
+     "name": "Pero · hrot",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-pero-hrot.svg",
+     "w": 119.5,
+     "h": 185.6
+    },
+    {
+     "id": "dirty-enough/design-pipeta",
+     "name": "Pipeta",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-pipeta.svg",
+     "w": 169.9,
+     "h": 178.9
+    },
+    {
+     "id": "dirty-enough/design-pravitko-tuzka",
+     "name": "Pravítko a tužka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-pravitko-tuzka.svg",
+     "w": 171.4,
+     "h": 174.5
+    },
+    {
+     "id": "dirty-enough/design-tablet-stylus",
+     "name": "Tablet se stylusem",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-tablet-stylus.svg",
+     "w": 187.9,
+     "h": 187.9
+    },
+    {
+     "id": "dirty-enough/design-tvary",
+     "name": "Tvary",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-tvary.svg",
+     "w": 175.1,
+     "h": 180.5
+    },
+    {
+     "id": "dirty-enough/design-typografie-aa",
+     "name": "Typografie Aa",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-typografie-aa.svg",
+     "w": 184.6,
+     "h": 151.7
+    },
+    {
+     "id": "dirty-enough/design-vrstvy",
+     "name": "Vrstvy",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-vrstvy.svg",
+     "w": 181.5,
+     "h": 158
+    },
+    {
+     "id": "dirty-enough/design-vzorky-barev",
+     "name": "Vzorník barev",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/design-vzorky-barev.svg",
+     "w": 130.2,
+     "h": 175.3
+    },
+    {
+     "id": "dirty-enough/nuzky",
+     "name": "Nůžky",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/nuzky.svg",
+     "w": 169.1,
+     "h": 166.7
+    },
+    {
+     "id": "dirty-enough/paleta-barev",
+     "name": "Paleta barev",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/paleta-barev.svg",
+     "w": 170.7,
+     "h": 172.4
+    },
+    {
+     "id": "dirty-enough/stetec",
+     "name": "Štětec",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/stetec.svg",
+     "w": 170.9,
+     "h": 175.4
+    },
+    {
+     "id": "dirty-enough/tuzka",
+     "name": "Tužka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/tuzka.svg",
+     "w": 169.5,
+     "h": 168
+    },
+    {
+     "id": "dirty-enough/zarovka",
+     "name": "Žárovka",
+     "group": "Design a tvorba",
+     "src": "dirty-enough/design-a-tvorba/zarovka.svg",
+     "w": 111.3,
+     "h": 168.9
+    },
+    {
+     "id": "dirty-enough/filmovy-pas",
+     "name": "Filmový pás",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/filmovy-pas.svg",
+     "w": 398.8,
+     "h": 128.2
+    },
+    {
+     "id": "dirty-enough/fotak-polaroid",
+     "name": "Foťák · polaroid",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/fotak-polaroid.svg",
+     "w": 183.7,
+     "h": 151.3
+    },
+    {
+     "id": "dirty-enough/fotak-zrcadlovka",
+     "name": "Foťák · zrcadlovka",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/fotak-zrcadlovka.svg",
+     "w": 194.7,
+     "h": 146
+    },
+    {
+     "id": "dirty-enough/fotoaparat",
+     "name": "Fotoaparát",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/fotoaparat.svg",
+     "w": 173.5,
+     "h": 142.3
+    },
+    {
+     "id": "dirty-enough/fullscreen",
+     "name": "Celá obrazovka",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/fullscreen.svg",
+     "w": 178.7,
+     "h": 175.2
+    },
+    {
+     "id": "dirty-enough/galerie",
+     "name": "Galerie",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/galerie.svg",
+     "w": 198.7,
+     "h": 182.9
+    },
+    {
+     "id": "dirty-enough/kamera-retro",
+     "name": "Kamera · retro",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/kamera-retro.svg",
+     "w": 168.2,
+     "h": 181.9
+    },
+    {
+     "id": "dirty-enough/kamera-video",
+     "name": "Videokamera",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/kamera-video.svg",
+     "w": 186.7,
+     "h": 140.8
+    },
+    {
+     "id": "dirty-enough/klapka",
+     "name": "Filmová klapka",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/klapka.svg",
+     "w": 165.3,
+     "h": 152.5
+    },
+    {
+     "id": "dirty-enough/nahravani-rec",
+     "name": "Nahrávání REC",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/nahravani-rec.svg",
+     "w": 242.7,
+     "h": 89.6
+    },
+    {
+     "id": "dirty-enough/obrazek",
+     "name": "Obrázek",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/obrazek.svg",
+     "w": 182.5,
+     "h": 147.5
+    },
+    {
+     "id": "dirty-enough/polaroid-fotka",
+     "name": "Polaroidová fotka",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/polaroid-fotka.svg",
+     "w": 154.5,
+     "h": 188.8
+    },
+    {
+     "id": "dirty-enough/televize",
+     "name": "Televize",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/televize.svg",
+     "w": 186.6,
+     "h": 178.9
+    },
+    {
+     "id": "dirty-enough/video-okno",
+     "name": "Video okno",
+     "group": "Foto a video",
+     "src": "dirty-enough/foto-a-video/video-okno.svg",
+     "w": 194.1,
+     "h": 165.4
+    },
+    {
+     "id": "dirty-enough/dalsi-skladba",
+     "name": "Další skladba",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/dalsi-skladba.svg",
+     "w": 128.8,
+     "h": 119.7
+    },
+    {
+     "id": "dirty-enough/kytara",
+     "name": "Kytara",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/kytara.svg",
+     "w": 107.1,
+     "h": 196.7
+    },
+    {
+     "id": "dirty-enough/mikrofon",
+     "name": "Mikrofon",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/mikrofon.svg",
+     "w": 104.6,
+     "h": 177.1
+    },
+    {
+     "id": "dirty-enough/nahodne-shuffle",
+     "name": "Náhodně",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/nahodne-shuffle.svg",
+     "w": 177,
+     "h": 109.9
+    },
+    {
+     "id": "dirty-enough/nota",
+     "name": "Nota",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/nota.svg",
+     "w": 115.8,
+     "h": 149.7
+    },
+    {
+     "id": "dirty-enough/opakovat",
+     "name": "Opakovat",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/opakovat.svg",
+     "w": 139.1,
+     "h": 150.7
+    },
+    {
+     "id": "dirty-enough/pauza-v-kruhu",
+     "name": "Pauza v kruhu",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/pauza-v-kruhu.svg",
+     "w": 172,
+     "h": 170.7
+    },
+    {
+     "id": "dirty-enough/pauza",
+     "name": "Pauza",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/pauza.svg",
+     "w": 128.3,
+     "h": 153.1
+    },
+    {
+     "id": "dirty-enough/play-trojuhelnik",
+     "name": "Play · trojúhelník",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/play-trojuhelnik.svg",
+     "w": 171.3,
+     "h": 177.9
+    },
+    {
+     "id": "dirty-enough/play",
+     "name": "Play · v kruhu",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/play.svg",
+     "w": 174.3,
+     "h": 176.3
+    },
+    {
+     "id": "dirty-enough/prehravac-lista",
+     "name": "Lišta přehrávače",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/prehravac-lista.svg",
+     "w": 389.9,
+     "h": 67.1
+    },
+    {
+     "id": "dirty-enough/pretocit-dopredu",
+     "name": "Přetočit dopředu",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/pretocit-dopredu.svg",
+     "w": 168.4,
+     "h": 110.9
+    },
+    {
+     "id": "dirty-enough/pretocit-zpet",
+     "name": "Přetočit zpět",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/pretocit-zpet.svg",
+     "w": 167.2,
+     "h": 116.4
+    },
+    {
+     "id": "dirty-enough/reproduktor",
+     "name": "Reproduktor",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/reproduktor.svg",
+     "w": 160.9,
+     "h": 147.9
+    },
+    {
+     "id": "dirty-enough/sluchatka",
+     "name": "Sluchátka",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/sluchatka.svg",
+     "w": 169.7,
+     "h": 150.1
+    },
+    {
+     "id": "dirty-enough/stop-v-kruhu",
+     "name": "Stop v kruhu",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/stop-v-kruhu.svg",
+     "w": 177.1,
+     "h": 173.4
+    },
+    {
+     "id": "dirty-enough/stop",
+     "name": "Stop",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/stop.svg",
+     "w": 149.7,
+     "h": 145.8
+    },
+    {
+     "id": "dirty-enough/ztlumit",
+     "name": "Ztlumit",
+     "group": "Hudba a přehrávač",
+     "src": "dirty-enough/hudba-a-prehravac/ztlumit.svg",
+     "w": 177.4,
+     "h": 147.4
+    },
+    {
+     "id": "dirty-enough/bublina-mysleni",
+     "name": "Bublina · myšlení",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/bublina-mysleni.svg",
+     "w": 191.9,
+     "h": 183.7
+    },
+    {
+     "id": "dirty-enough/bublina-rec",
+     "name": "Bublina · řeč",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/bublina-rec.svg",
+     "w": 172.3,
+     "h": 153.2
+    },
+    {
+     "id": "dirty-enough/chat",
+     "name": "Chat",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/chat.svg",
+     "w": 186.6,
+     "h": 174.5
+    },
+    {
+     "id": "dirty-enough/hashtag",
+     "name": "Hashtag",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/hashtag.svg",
+     "w": 165,
+     "h": 161.6
+    },
+    {
+     "id": "dirty-enough/hodnoceni-5-hvezd",
+     "name": "Hodnocení 5 hvězd",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/hodnoceni-5-hvezd.svg",
+     "w": 399.7,
+     "h": 82
+    },
+    {
+     "id": "dirty-enough/lajk-palec-dolu",
+     "name": "Palec dolů",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/lajk-palec-dolu.svg",
+     "w": 135.6,
+     "h": 169.8
+    },
+    {
+     "id": "dirty-enough/like-srdce-bublina",
+     "name": "Like · srdce v bublině",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/like-srdce-bublina.svg",
+     "w": 187.8,
+     "h": 175.1
+    },
+    {
+     "id": "dirty-enough/megafon",
+     "name": "Megafon",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/megafon.svg",
+     "w": 173.9,
+     "h": 145.9
+    },
+    {
+     "id": "dirty-enough/notifikace-1",
+     "name": "Notifikace",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/notifikace-1.svg",
+     "w": 146.1,
+     "h": 151.6
+    },
+    {
+     "id": "dirty-enough/obalka",
+     "name": "Obálka",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/obalka.svg",
+     "w": 169.4,
+     "h": 118.3
+    },
+    {
+     "id": "dirty-enough/palec-nahoru-ok",
+     "name": "Palec nahoru",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/palec-nahoru-ok.svg",
+     "w": 133.4,
+     "h": 168.1
+    },
+    {
+     "id": "dirty-enough/podani-rukou",
+     "name": "Podání rukou",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/podani-rukou.svg",
+     "w": 201.6,
+     "h": 82.3
+    },
+    {
+     "id": "dirty-enough/tym",
+     "name": "Tým",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/tym.svg",
+     "w": 181.3,
+     "h": 124.7
+    },
+    {
+     "id": "dirty-enough/uzivatel",
+     "name": "Uživatel",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/uzivatel.svg",
+     "w": 155.5,
+     "h": 164.6
+    },
+    {
+     "id": "dirty-enough/zavinac-email",
+     "name": "Zavináč · e-mail",
+     "group": "Komunikace",
+     "src": "dirty-enough/komunikace/zavinac-email.svg",
+     "w": 158.8,
+     "h": 158.4
+    },
+    {
+     "id": "dirty-enough/bankovka",
+     "name": "Bankovka",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/bankovka.svg",
+     "w": 187.1,
+     "h": 116.7
+    },
+    {
+     "id": "dirty-enough/cenovka",
+     "name": "Cenovka",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/cenovka.svg",
+     "w": 186.7,
+     "h": 177.4
+    },
+    {
+     "id": "dirty-enough/darek",
+     "name": "Dárek",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/darek.svg",
+     "w": 160.3,
+     "h": 162.6
+    },
+    {
+     "id": "dirty-enough/diamant",
+     "name": "Diamant",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/diamant.svg",
+     "w": 180.1,
+     "h": 149
+    },
+    {
+     "id": "dirty-enough/graf-rust",
+     "name": "Graf · růst",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/graf-rust.svg",
+     "w": 174.5,
+     "h": 176.5
+    },
+    {
+     "id": "dirty-enough/kalendar",
+     "name": "Kalendář",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/kalendar.svg",
+     "w": 161.6,
+     "h": 170
+    },
+    {
+     "id": "dirty-enough/mince-kc",
+     "name": "Mince · Kč",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/mince-kc.svg",
+     "w": 164.1,
+     "h": 166.1
+    },
+    {
+     "id": "dirty-enough/mince-stoh",
+     "name": "Mince · stoh",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/mince-stoh.svg",
+     "w": 155.5,
+     "h": 196.6
+    },
+    {
+     "id": "dirty-enough/nakupni-kosik",
+     "name": "Nákupní košík",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/nakupni-kosik.svg",
+     "w": 177.9,
+     "h": 142.4
+    },
+    {
+     "id": "dirty-enough/nakupni-taska",
+     "name": "Nákupní taška",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/nakupni-taska.svg",
+     "w": 148,
+     "h": 172
+    },
+    {
+     "id": "dirty-enough/penezenka",
+     "name": "Peněženka",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/penezenka.svg",
+     "w": 188.7,
+     "h": 164.5
+    },
+    {
+     "id": "dirty-enough/pohar",
+     "name": "Pohár",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/pohar.svg",
+     "w": 154.8,
+     "h": 164.7
+    },
+    {
+     "id": "dirty-enough/prasatko-pokladnicka",
+     "name": "Prasátko pokladnička",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/prasatko-pokladnicka.svg",
+     "w": 181.2,
+     "h": 163
+    },
+    {
+     "id": "dirty-enough/procenta-sleva",
+     "name": "Procenta · sleva",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/procenta-sleva.svg",
+     "w": 171.7,
+     "h": 172
+    },
+    {
+     "id": "dirty-enough/terc",
+     "name": "Terč",
+     "group": "Obchod a peníze",
+     "src": "dirty-enough/obchod-a-penize/terc.svg",
+     "w": 184.6,
+     "h": 187.9
+    },
+    {
+     "id": "dirty-enough/auto",
+     "name": "Auto",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/auto.svg",
+     "w": 177,
+     "h": 102.8
+    },
+    {
+     "id": "dirty-enough/horkovzdusny-balon",
+     "name": "Horkovzdušný balón",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/horkovzdusny-balon.svg",
+     "w": 140.5,
+     "h": 184.5
+    },
+    {
+     "id": "dirty-enough/kolo",
+     "name": "Kolo",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/kolo.svg",
+     "w": 195.9,
+     "h": 137.3
+    },
+    {
+     "id": "dirty-enough/kompas",
+     "name": "Kompas",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/kompas.svg",
+     "w": 167.8,
+     "h": 181.8
+    },
+    {
+     "id": "dirty-enough/kotva",
+     "name": "Kotva",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/kotva.svg",
+     "w": 159.5,
+     "h": 174
+    },
+    {
+     "id": "dirty-enough/kufr",
+     "name": "Kufr",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/kufr.svg",
+     "w": 160.7,
+     "h": 160.3
+    },
+    {
+     "id": "dirty-enough/letadlo",
+     "name": "Letadlo",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/letadlo.svg",
+     "w": 176.1,
+     "h": 175.6
+    },
+    {
+     "id": "dirty-enough/papirova-vlastovka",
+     "name": "Papírová vlaštovka",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/papirova-vlastovka.svg",
+     "w": 192.3,
+     "h": 159.1
+    },
+    {
+     "id": "dirty-enough/pin-lokace",
+     "name": "Pin · místo",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/pin-lokace.svg",
+     "w": 122.4,
+     "h": 177.8
+    },
+    {
+     "id": "dirty-enough/plachetnice",
+     "name": "Plachetnice",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/plachetnice.svg",
+     "w": 189.5,
+     "h": 181.7
+    },
+    {
+     "id": "dirty-enough/raketa",
+     "name": "Raketa",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/raketa.svg",
+     "w": 99,
+     "h": 181.1
+    },
+    {
+     "id": "dirty-enough/stan",
+     "name": "Stan",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/stan.svg",
+     "w": 182.5,
+     "h": 163.5
+    },
+    {
+     "id": "dirty-enough/ufo",
+     "name": "UFO",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/ufo.svg",
+     "w": 190.6,
+     "h": 154.5
+    },
+    {
+     "id": "dirty-enough/vlajka",
+     "name": "Vlajka",
+     "group": "Cestování a doprava",
+     "src": "dirty-enough/cestovani-a-doprava/vlajka.svg",
+     "w": 151.2,
+     "h": 183.5
+    },
+    {
+     "id": "dirty-enough/batoh",
+     "name": "Batoh",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/batoh.svg",
+     "w": 126.8,
+     "h": 175.8
+    },
+    {
+     "id": "dirty-enough/bryle",
+     "name": "Brýle",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/bryle.svg",
+     "w": 190.1,
+     "h": 82.7
+    },
+    {
+     "id": "dirty-enough/hodinky",
+     "name": "Hodinky",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/hodinky.svg",
+     "w": 113.7,
+     "h": 185.6
+    },
+    {
+     "id": "dirty-enough/ksiltovka",
+     "name": "Kšiltovka",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/ksiltovka.svg",
+     "w": 176.4,
+     "h": 107.8
+    },
+    {
+     "id": "dirty-enough/mikina",
+     "name": "Mikina",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/mikina.svg",
+     "w": 181.9,
+     "h": 182.6
+    },
+    {
+     "id": "dirty-enough/prsten",
+     "name": "Prsten",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/prsten.svg",
+     "w": 131.1,
+     "h": 178.8
+    },
+    {
+     "id": "dirty-enough/teniska",
+     "name": "Teniska",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/teniska.svg",
+     "w": 188.1,
+     "h": 119
+    },
+    {
+     "id": "dirty-enough/tricko",
+     "name": "Tričko",
+     "group": "Oblečení a doplňky",
+     "src": "dirty-enough/obleceni-a-doplnky/tricko.svg",
+     "w": 193.9,
+     "h": 169.2
+    },
+    {
+     "id": "dirty-enough/balonek",
+     "name": "Balónek",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/balonek.svg",
+     "w": 117,
+     "h": 192.3
+    },
+    {
+     "id": "dirty-enough/duch",
+     "name": "Duch",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/duch.svg",
+     "w": 133.5,
+     "h": 172.1
+    },
+    {
+     "id": "dirty-enough/dum",
+     "name": "Dům",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/dum.svg",
+     "w": 172.6,
+     "h": 168.3
+    },
+    {
+     "id": "dirty-enough/hodiny",
+     "name": "Hodiny",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/hodiny.svg",
+     "w": 169.3,
+     "h": 168.2
+    },
+    {
+     "id": "dirty-enough/klic",
+     "name": "Klíč",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/klic.svg",
+     "w": 176.4,
+     "h": 78.2
+    },
+    {
+     "id": "dirty-enough/kniha",
+     "name": "Kniha",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/kniha.svg",
+     "w": 178.8,
+     "h": 134.5
+    },
+    {
+     "id": "dirty-enough/koruna",
+     "name": "Koruna",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/koruna.svg",
+     "w": 174,
+     "h": 136.8
+    },
+    {
+     "id": "dirty-enough/kostka",
+     "name": "Kostka",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/kostka.svg",
+     "w": 152.4,
+     "h": 152.2
+    },
+    {
+     "id": "dirty-enough/kriz",
+     "name": "Kříž",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/kriz.svg",
+     "w": 109.8,
+     "h": 184.5
+    },
+    {
+     "id": "dirty-enough/lupa",
+     "name": "Lupa",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/lupa.svg",
+     "w": 153.8,
+     "h": 157.1
+    },
+    {
+     "id": "dirty-enough/oko-preskrtnute",
+     "name": "Oko · přeškrtnuté",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/oko-preskrtnute.svg",
+     "w": 175.8,
+     "h": 161.8
+    },
+    {
+     "id": "dirty-enough/oko",
+     "name": "Oko",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/oko.svg",
+     "w": 177.5,
+     "h": 105
+    },
+    {
+     "id": "dirty-enough/presypaci-hodiny",
+     "name": "Přesýpací hodiny",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/presypaci-hodiny.svg",
+     "w": 131,
+     "h": 189.6
+    },
+    {
+     "id": "dirty-enough/puzzle",
+     "name": "Puzzle",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/puzzle.svg",
+     "w": 163.2,
+     "h": 162
+    },
+    {
+     "id": "dirty-enough/stopky",
+     "name": "Stopky",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/stopky.svg",
+     "w": 157.7,
+     "h": 180.3
+    },
+    {
+     "id": "dirty-enough/svicka",
+     "name": "Svíčka",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/svicka.svg",
+     "w": 77.2,
+     "h": 179.7
+    },
+    {
+     "id": "dirty-enough/zamek",
+     "name": "Zámek",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/zamek.svg",
+     "w": 133,
+     "h": 165.8
+    },
+    {
+     "id": "dirty-enough/zdravotni-krizek",
+     "name": "Zdravotní křížek",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/zdravotni-krizek.svg",
+     "w": 170.1,
+     "h": 170.5
+    },
+    {
+     "id": "dirty-enough/zub",
+     "name": "Zub",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/zub.svg",
+     "w": 108.8,
+     "h": 164.4
+    },
+    {
+     "id": "dirty-enough/zvon",
+     "name": "Zvon",
+     "group": "Věci a symboly",
+     "src": "dirty-enough/veci-a-symboly/zvon.svg",
+     "w": 172.1,
+     "h": 151.8
+    }
+   ]
+  }
+ ]
+}

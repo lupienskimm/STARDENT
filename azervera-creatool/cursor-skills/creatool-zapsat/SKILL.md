@@ -1,0 +1,61 @@
+---
+name: creatool-zapsat
+description: Zapíše export z editoru Azervera CREATOOL (creatool-*.json) do zdrojového kódu webu. Nejdřív vytvoří zálohu (commit „backup: pred-zmenami“), k požadavkům popsaným slovy napíše plán a otázky, přidá nové akce a animace do registru a změny ověří na počítači, tabletu i mobilu.
+disable-model-invocation: true
+---
+
+# Zapsání exportu z Azervera CREATOOL
+
+Uživatel přiložil export `creatool-….json` (případně starší `review-lab-….json`, ten má jen texts[] a moves[] s posuny v procentech vlastní velikosti).
+
+Zapiš změny z něj do zdrojového kódu tak, aby web po sestavení vypadal a fungoval přesně jako v náhledu editoru. Nic nevynechávej potichu.
+
+KROK 0: ZÁLOHA (bez ní nezačínej)
+- Než cokoliv změníš: ulož export do creatool/zaloha/stav-editoru.json (přepiš předchozí, držíme jen jednu zálohu), a vytvoř git commit se zprávou „backup: pred-zmenami“ se současným stavem projektu a tímto souborem.
+- Když se commit nepodaří (neuložené změny, chybí git), zastav se a napiš mi proč. Bez zálohy nic neměň.
+
+JAK ČÍST EXPORT
+- elements[]: jeden prvek. number (T… text / P… prvek), element (popis), selector (CSS selektor v DOM), sharedElement (hlavička, menu, patička sdílená stránkami), pages, original[] (původní části textu), originalFont, summary[] (čitelný popis změn).
+- Úpravy jsou ve dvou rozměrech:
+  - shared = celý web, overrides["/stranka"] = jen ta stránka,
+  - uvnitř desktop / tablet / mobile.
+  Pořadí přednosti: stránka+zařízení > stránka+počítač > web+zařízení > web+počítač. desktop se propisuje na tablet i mobil; tablet a mobile platí jen pro sebe (vlastnost uvedená u zařízení se od počítače odpojila).
+- Zařízení na skutečném webu: mobile < breakpoints.tablet px ≤ tablet < breakpoints.desktop px ≤ desktop. Použij media queries (nebo třídy frameworku) podle breakpoints.
+- Vlastnosti:
+  - text[]: nové znění stejných částí jako original[] (text vnořených prvků má vlastní položku).
+  - font: rodina písma; fontScale: násobek původní vypočtené velikosti (u responsivních hodnot uprav celý výraz úměrně; na mobilu, pokud hodnota přišla z počítače, nejméně 16 px pro běžný text).
+  - x, y: posun v px přičtený k vlastnímu translate prvku; refW: šířka rodiče při úpravě. Na počítači zapiš translate v px; na tabletu a mobilu (když nemají vlastní x/y) přepočítej poměrem šířky rodiče / refW, nebo použij relativní jednotku, aby prvek zůstal na stejném místě vůči okolí. xPct/yPct: posun v % vlastní velikosti (z Review Lab). rotate: stupně, scale: násobek. Použij samostatné vlastnosti translate/rotate/scale, skládají se s existujícím transform.
+  - width, height, minW, maxW, minH, maxH: {v, u} (u = px | % | vw | vh | auto). Editor je kreslí s box-sizing: border-box. Šířky v px z počítače dostanou na menších zařízeních max-width: 100 %. overflow: shrink (zmenšit obsah) | wrap | hidden | scroll.
+  - shape: {mode: "clip" | "warp", pts: [[x%, y%], …]}. clip → clip-path: polygon(...). warp (4 body) → transform matrix3d spočítaný ze čtyř rohů pro skutečnou velikost prvku na každém breakpointu (homografie z rohů boxu na body). shapeFix: stín přes filter: drop-shadow() na obalovém prvku; rámeček podle tvaru udělej druhou vrstvou se stejným tvarem.
+  - bg: {type: solid|linear|radial|image|transparent, color, angle, stops[{c,p}], image, size}; glass: {on, blur, alpha, sat, tint} → backdrop-filter + poloprůhledná výplň a @supports záloha; opacity 0–100; shadow {x, y, blur, spread, color, inset}; border {w, style, color} nebo each + sides; blend → mix-blend-mode.
+  - radius: {preset: sharp|pill|circle} nebo {tl, tr, br, bl, elliptic, tlY…}; padding {t, r, b, l} px; alignH, alignV, gap, flexify (obsah jako flex sloupec).
+  - img: {media, alt, focal {x, y}, category}. Soubor najdeš v media[] (webp jako data URL): ulož ho do statických souborů webu (např. public/images/…webp), nahraď zdroj obrázku (u next/image i width/height), alt text zapiš vždy, focal → object-position.
+  - art: {id, name, src, ratio, color} = prvek nahrazený kresbou z knihovny. Původní obsah se skryje a box prvku ukáže SVG art.src (fill="currentColor") v barvě art.color. V kódu obsah prvku nahraď kresbou: stejný box (poloha, rozměr, otočení, animace zůstávají) s CSS maskou (background: barva; mask: url(src) center / contain no-repeat), nebo SVG vložené přímo s color: barva. Soubor art.src už na webu je (knihovna, např. public/creatool/prvky/…); když chybí, zkopíruj ho tam. Kresba je dekorace: aria-hidden="true", pokud prvek nenesl text; když nesl text, nech text dostupný čtečkám (sr-only).
+  - removed: true = prvek je v editoru smazaný. V desktop vrstvě ho odstraň z kódu (jen na té stránce, u sdíleného prvku podle rozsahu shared / overrides); když je jen u tabletu nebo mobilu, skryj ho tam media query. removed: false v nižší vrstvě znamená, že na tom zařízení zůstává. Nic dalšího nemaž a ověř, že odstraněním nezmizí nic potřebného (odkaz, nadpis sekce, popisek formuláře); když ano, zeptej se.
+  - action: {id, params, replace}. Základní akce (link-page, scroll-to, call, email, open-url) zapiš jako odkaz nebo obsluhu kliknutí. Uložené akce jsou v registry.actions a v kódu je najdeš podle data-action="id". replace: false znamená, že původní funkce prvku zůstává: nic nenahrazuj a zeptej se.
+  - animations: {enter, hover, click: {id, duration, delay, easing}}. Klíčové snímky vestavěných animací jsou v registry.animations (replace = přepisující, add = přičítané k vlastním hodnotám). Zapiš je CSS nebo knihovnou, kterou web už používá, a respektuj prefers-reduced-motion.
+  - Barvy "token:jmeno" = CSS proměnná tokenu. tokens.css obsahuje změněné tokeny jako proměnné na :root; zapiš je tam, kde web definuje své proměnné.
+- addedElements[]: nové kresby, které na webu zatím nejsou. id, page ("*" = na všech stránkách), anchor (selektor prvku, ke kterému je kresba připnutá) a anchorLabel, x a y (střed kresby v % šířky a výšky anchoru), w (šířka v px při šířce anchoru refW; editor ji na užším anchoru zmenšuje poměrem √(šířka/refW), nejméně na 45 %), art {src, color, ratio, name}, summary. Vlož ji jako dekorativní prvek (aria-hidden="true", pointer-events: none) do anchoru: position: absolute; left: x %; top: y %; translate: -50% -50%; width: w px (na menších breakpointech úměrně menší), aspect-ratio: ratio; kresba přes CSS masku nebo inline SVG v barvě art.color. Anchor dostane position: relative, jen když už nemá vlastní pozicování a nerozbije to jeho absolutně umístěné potomky; jinak kresbu vlož do nejbližšího vhodného obalu a přepočítej polohu. Posuny, rozměr, otočení a animace kresby jsou v elements[] pod selektorem [data-creatool-id="ct-add-…"] (ten v kódu není, patří k této kresbě); přičti je.
+- addedElements[] s kind: "text" = nový text. text (prostý text, řádky oddělené \n), style {font, size v px, weight, italic, upper, align, lineHeight, color}, w = nejvyšší šířka řádku v px. Vlož ho jako skutečný text (ne aria-hidden) do anchoru se stejnými pravidly polohy jako kresby; velikost na užším anchoru zmenši stejným poměrem (nejméně 12 px). U vícejazyčného webu ho přidej do textů jazyka stránky a ostatní jazyky vypiš jako otázku.
+- addedElements[] s kind: "model" = nahraný 3D model. model: {id, name, rx, ry, rz}. rx, ry a rz jsou radiány kolem os X, Y a Z. Šířka je w (px při šířce anchoru refW), poloha je stejná jako u kreseb (anchor, x, y). Soubor je v models[] pod stejným id: {id, name, glb} a glb je data URL `data:model/gltf-binary;base64,…`. Ulož ho jako soubor `.glb` do statických assets a na stránce ho zobraz ve stejné velikosti a se stejným otočením (Three.js nebo jiný prohlížeč, který web už používá). Když web 3D prohlížeč nemá, přidej jen ten model, ne celou knihovnu navíc, a zachovej prefers-reduced-motion.
+- extras: volitelná data, která si web sám přidal přes `window.CreatoolExportExtras`. Když je web už umí (třeba uložené pózy), zapiš je tam, kam patří. Jinak je v plánu jen vyjmenuj a nic nevymýšlej.
+- clientEditable: prvek smí upravovat klient (zatím jen informace pro budoucí přihlašování).
+- scopeChoice, snap: nastavení editoru, v kódu nic nedělej.
+
+ČEKAJÍCÍ POŽADAVKY (pendingRequests[]: akce, animace, komponenty, komentáře)
+1. Ke každému nejdřív napiš plán a zeptej se na nejasnosti. Nic neimplementuj naslepo.
+2. Novou akci nebo animaci přidej DO REGISTRU (creatool.registry.json nebo místo, kam ukazuje registryUrl): id, name (česky), description (jedna věta), params, source (soubor a místo v kódu). Tak půjde příště vybrat ze seznamu i u jiných prvků.
+3. Teprve pak ji napoj na prvek podle elementId / selector, page a scope (page = jen ta stránka, site = celý web) a device. Prvek s akcí označ atributem data-action="id".
+4. Komponentu (type: component) vlož podle component.html na místo position (before / after) vedle prvku, převeď ji do komponent frameworku a použij tokeny cílového webu. linked: true = jedna sdílená komponenta použitá na všech místech.
+5. Komentáře (type: comment) ber jako zadání; když nejsou jasné, zeptej se.
+6. Nerozbij stávající akce a nesahej na prvky, kterých se požadavek netýká.
+7. Na konci ke každému požadavku napiš status done a kde je implementace v kódu, a jak to otestuji.
+
+OBECNĚ
+- Měň zdroj (komponenty, překlady, data, CSS), nikdy sestavený výstup. U sdílené komponenty ověř, jestli má změna platit všude; když ne, uprav jen tu instanci.
+- Vícejazyčný web: měň jen jazyk stránky, kde změna vznikla; ostatní jazyky vypiš jako otázku.
+- Nesmí se rozbít funkčnost: odkazy, formuláře, navigace a přístupnost (klávesnice, kontrast, popisky) fungují dál.
+- Stabilní měřítko: hodnoty z exportu platí v náhledových šířkách (390, 768 a 1440 px). Když web má stabilní měřítko (skript z azervera-creatool/meritko, na <html> se objevuje data-fit nebo data-zoom), je rozvržení v každém rozsahu pořád stejně široké. Zapiš proto hodnoty přímo v px pro danou šířku, bez přepočtu přes vw, a web se jinde jen zvětší nebo zmenší. Když ho web nemá, upozorni mě, že se úpravy v jiných šířkách budou rozjíždět, a nabídni instalaci podle azervera-creatool/meritko/README.md.
+- Stránka nesmí po načtení ani při přechodu na jinou stránku poskočit. Prvek, který je vidět hned (tlačítka, bloky, nápisy), patří do HTML, ne do skriptu, který ho vloží až po načtení; skript k němu jen připojí události. Třídu, která mění rozložení (třeba mobilní verzi), nastav v inline skriptu v `<head>` a její CSS načti v `<head>`, ne skriptem. Hlavní písma přednačti (`<link rel="preload" href="…woff2" as="font" type="font/woff2" crossorigin>`) a soubory písem posílej s dlouhou cache (`Cache-Control: public, max-age=31536000, immutable`, na Vercelu `headers` ve `vercel.json`). Bez ní se písmo při každém přechodu znovu ověřuje na serveru, přijde až po vykreslení a texty i menu uskočí. Co se má lišit mezi rozloženími počítače, piš přes `html[data-pc="1280"]`, `html[data-pc="1440"]` a `html[data-pc="1920"]`, ne přes `max-width`.
+- Kontrola: lint, typecheck, build; projdi dotčené stránky na 1440, 768 a 390 px a porovnej se summary v exportu. Se stabilním měřítkem zkontroluj i okno 1100 px (musí vypadat jako 1440 px zmenšené) a emulovaný iPhone 17 Pro Max (440 px, stejné jako náhled Mobil). Klikni mezi dvěma stránkami na 390, 1300, 1440, 1536, 1700 a 1920 px a na nové stránce spusť v konzoli `new PerformanceObserver((l) => l.getEntries().forEach((e) => console.log("posun", e.value, e.sources.map((s) => s.node)))).observe({ type: "layout-shift", buffered: true })`. Žádný posun se nesmí vypsat.
+- Na konci vypiš tabulku: číslo položky → co a ve kterém souboru, zvlášť položky, které nešly aplikovat (s důvodem), a připomínku: „V CREATOOL teď dej Koncept → Změny jsou zapsané v kódu.“

@@ -1,0 +1,12 @@
+/* Vlož do globálního CSS. Telefony a tablety ukazují stránku v pevné šířce
+   rozvržení; prohlížeč nesmí text zvětšovat sám. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Když je stránka zmenšená pod 100 % (html[data-fit-small]), pole menší než 16 px
+   iPhone při psaní přiblíží. 17 px tomu zabrání. */
+html[data-fit-small] :is(input, select, textarea) {
+  font-size: 17px;
+}
