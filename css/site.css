@@ -894,7 +894,7 @@ body:has(.contact-grid) { background: var(--paper); }
     align-items: stretch;
     padding: 0.6rem var(--pad) 1.4rem;
     gap: 0;
-    overflow: auto;
+    overflow: hidden;
     visibility: hidden;
     pointer-events: none;
     transform: translateY(-18px);
@@ -912,6 +912,8 @@ body:has(.contact-grid) { background: var(--paper); }
     transform: translateY(-14px);
   }
   .site-nav a {
+    position: relative;
+    z-index: 1;
     padding: 0.9rem 0;
     border-bottom: 1px solid rgba(255,255,255,.12);
     opacity: 0;
@@ -931,14 +933,16 @@ body:has(.contact-grid) { background: var(--paper); }
   .site-nav.is-open::after,
   .site-nav.is-closing::after {
     content: "";
-    display: block;
-    width: min(210px, 48vw);
-    height: min(250px, 34vh);
-    margin: auto auto 0.4rem;
-    background: url("../img/logo.svg") center / contain no-repeat;
+    position: absolute;
+    left: -28vw;
+    bottom: -18vh;
+    width: 108vw;
+    height: calc(108vw * 601 / 406);
+    margin: 0;
+    background: url("../img/logo.svg") left bottom / 100% 100% no-repeat;
     pointer-events: none;
-    transform-origin: center;
-    flex: none;
+    transform-origin: left bottom;
+    z-index: 0;
   }
   .site-nav.is-open::after {
     opacity: 0;
@@ -969,7 +973,7 @@ body:has(.contact-grid) { background: var(--paper); }
   .home-hero-photo img + img { height: 100%; }
   .systems { grid-template-columns: 1fr; }
   .systems li + li { border-left: 0; border-top: 1px solid rgba(255,255,255,.14); }
-  .contact-grid > div:first-child { border-radius: 28px 28px 28px 96px; }
+  .contact-grid > div:first-child { border-radius: 96px 28px 28px 28px; }
   .map, .map iframe { min-height: 320px; }
   .map { border-radius: 28px 28px 96px 28px; }
   .doc,
@@ -991,6 +995,30 @@ body:has(.contact-grid) { background: var(--paper); }
   .about-sheet { margin-top: -5.5rem; }
   .stage-a img, .stage-b img { min-height: 240px; }
   .split img { height: 280px; border-radius: 90px 28px 28px 28px; }
+  .clinic-photo img { border-radius: 28px 28px 28px 90px; }
+  .split { position: relative; }
+  .facts {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 3;
+    width: max-content;
+    max-width: calc(100% - 0.6rem);
+    margin: 0;
+    transform: translate(-50%, 50%);
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  .facts div {
+    padding: 0.36rem 0.62rem;
+    box-shadow: 0 8px 18px rgba(6,43,56,.14);
+  }
+  .facts strong {
+    font-size: clamp(0.78rem, 3.6vw, 0.92rem);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
