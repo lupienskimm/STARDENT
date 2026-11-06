@@ -158,7 +158,7 @@ button, input, textarea { font: inherit; color: inherit; }
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: center;
+  align-items: stretch;
   min-height: auto;
   padding: clamp(2.6rem, 6vw, 5.2rem) max(var(--pad), calc((100vw - 1180px) / 2)) clamp(3rem, 6vw, 5rem);
   background: linear-gradient(135deg, #062B38 0%, #0A5670 48%, #13809A 100%);
@@ -186,17 +186,15 @@ button, input, textarea { font: inherit; color: inherit; }
   100% { transform: translate3d(0, 0, 0) rotate(-3deg); }
 }
 .home-hero-copy, .home-hero-photo { position: relative; min-width: 0; }
-.home-hero-copy { padding-right: 0.4rem; }
-.home-hero .kicker { color: transparent; }
-.home-hero h1 { max-width: 36rem; }
-.hero-slogan { display: block; width: 100%; height: auto; }
-.home-hero .lead {
-  margin-top: 1.15rem;
-  max-width: 42rem;
-  font-size: 1.12rem;
-  color: #D5E7EC;
+.home-hero-copy {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: start;
+  padding-right: 0.4rem;
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-top: 1.6rem; }
+.home-hero h1 { grid-row: 2; align-self: center; max-width: 36rem; margin: 0; }
+.hero-slogan { display: block; width: 100%; height: auto; }
+.hero-actions { grid-row: 3; align-self: start; display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-top: 1.6rem; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -287,18 +285,20 @@ button, input, textarea { font: inherit; color: inherit; }
 .prose h2, .section-label h2 { font-size: clamp(2rem, 3vw, 3rem); margin-bottom: 0.9rem; }
 .facts {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
   margin-top: 1.4rem;
   background: transparent;
   border: 0;
 }
+.facts-more { margin: 1.15rem 0 0; }
 .facts div {
   display: block;
   background: #fff;
   border-radius: 22px;
   padding: 1rem 1.1rem;
 }
-.facts strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.15rem; margin-bottom: 0.15rem; }
+.facts strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.15rem; margin-bottom: 0; }
 .facts span { color: var(--muted); }
 
 .section-label {
@@ -335,10 +335,9 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .svc-row h3 { font-size: 1.55rem; }
 .svc-row p { color: var(--muted); }
-.svc-row:hover { border-color: var(--cyan); box-shadow: 0 18px 40px rgba(11,102,131,.1); }
-.svc-row:nth-child(2) { background: var(--deep-2); border-color: var(--deep-2); color: #fff; }
-.svc-row:nth-child(2) p { color: #CFE2E8; }
-.svc-row:nth-child(2) .num { color: var(--lime); }
+.svc-row:hover { background: var(--deep-2); border-color: var(--deep-2); color: #fff; box-shadow: none; }
+.svc-row:hover p { color: #CFE2E8; }
+.svc-row:hover .num { color: var(--lime); }
 @media (min-width: 981px) {
   .svc-row:last-child:nth-child(5) {
     grid-column: 1 / -1;
@@ -648,7 +647,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .row-copy p { color: var(--muted); max-width: 48ch; }
 .row-photo { position: relative; min-height: 320px; overflow: hidden; }
 .row-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.catalog a.row:nth-child(2) .row-photo img { object-position: 78% 62%; }
+.catalog .row-photo img[src$="osetreni.jpg"] { object-position: 78% 62%; }
 .catalog a.row:hover h2 { color: var(--teal); }
 
 .article-hero { padding: clamp(2.2rem, 5vw, 3.6rem) 0 0.4rem; }
@@ -843,7 +842,6 @@ body:has(.contact-grid) { background: var(--paper); }
   .week { grid-template-columns: 1fr; }
   .week li { flex-direction: row; justify-content: space-between; align-items: center; text-align: left; padding: 0.85rem 1.1rem; border-bottom: 0; border-left: 4px solid var(--cyan); }
   .svc-list, .two-notes, .footer-grid, .person { grid-template-columns: 1fr; }
-  .facts { grid-template-columns: 1fr; }
   .about-hero { -webkit-mask-image: linear-gradient(#000 0, #000 78%, transparent 100%); mask-image: linear-gradient(#000 0, #000 78%, transparent 100%); }
   .about-hero img { aspect-ratio: 5 / 4; object-view-box: inset(18% 8% 2% 8%); }
   .about-sheet { margin-top: -5.5rem; }
