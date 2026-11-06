@@ -22,9 +22,8 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <nav id="menu" class="site-nav">
         <a href="index.html" aria-current="page">Domů</a>
-        <a href="o-nas.html">O nás</a>
+        <a href="o-nas.html">Klinika/tým</a>
         <a href="sluzby.html">Služby</a>
-        <a href="o-nas.html#tym">Náš tým</a>
         <a href="kontakt.html">Kontakt</a>
       <a class="nav-cta" href="tel:+420774822554">774 822 554</a>
       </nav>
@@ -34,6 +33,9 @@
   <main id="obsah">
 
     <section class="home-hero">
+      <video class="hero-bg" autoplay muted loop playsinline preload="metadata" disablepictureinpicture poster="img/hero-poster.jpg" aria-hidden="true">
+        <source src="img/hero.mp4" type="video/mp4">
+      </video>
       <div class="home-hero-copy">
         <h1><img class="hero-slogan" src="img/pekny-usmev.png" alt="pěkný úsměv, lepší život."></h1>
         <div class="hero-actions">
@@ -42,47 +44,10 @@
         </div>
       </div>
       <figure class="home-hero-photo">
-        <img src="img/recepce.jpg" alt="Recepce Star-Dent clinic v Mostech u Jablunkova">
+        <img src="img/hero-rentgen.jpg" alt="3D rentgen na klinice">
+        <img src="img/hero-klinika.jpg" alt="">
       </figure>
     </section>
-    <section class="week-band" aria-labelledby="hodiny">
-      <div class="wrap week-grid">
-      <div>
-        <p class="kicker">Ordinační hodiny</p>
-        <h2 id="hodiny">Po–Pá 7:00–15:00</h2>
-        <p class="where">Mosty u Jablunkova 417, 739 98<br><a href="tel:+420774822554">+420 774 822 554</a><br><a href="mailto:recepce@stardent.cz">recepce@stardent.cz</a></p>
-      </div>
-      <ol class="week">
-        <li><span class="day">Po</span><span class="time">7:00–15:00</span></li>
-        <li><span class="day">Út</span><span class="time">7:00–15:00</span></li>
-        <li><span class="day">St</span><span class="time">7:00–15:00</span></li>
-        <li><span class="day">Čt</span><span class="time">7:00–15:00</span></li>
-        <li><span class="day">Pá</span><span class="time">7:00–15:00</span></li>
-      </ol>
-      </div>
-    </section>
-    <section class="band band-paper">
-      <div class="wrap split">
-        <div class="prose">
-          <h2>O klinice</h2>
-          <p>Působíme v Mostech u Jablunkova a nabízíme komplexní stomatologickou péči v příjemném prostředí. Zaměřujeme se na prevenci, záchovnou i estetickou stomatologii a klademe důraz na individuální přístup ke každému pacientovi.</p>
-          <div class="facts">
-            <div><strong>Vlastní zubní laboratoř</strong></div>
-            <div><strong>3D rentgen CBCT</strong></div>
-          </div>
-          <p class="facts-more"><a class="btn" href="o-nas.html">Více o naší klinice</a></p>
-        </div>
-        <figure>
-          <img src="img/chodba.jpg" alt="Chodba kliniky směrem k recepci a čekárně">
-        </figure>
-      </div>
-    </section>
-    
-    <figure class="walk">
-      <video controls playsinline preload="metadata" poster="img/uvod-poster.jpg">
-        <source src="img/uvod.mp4" type="video/mp4">
-      </video>
-    </figure>
     <section class="band">
       <div class="wrap">
         <div class="section-label">
@@ -113,11 +78,29 @@
         </div>
       </div>
     </section>
+    <section class="band band-paper">
+      <div class="wrap split">
+        <div class="prose">
+          <h2>O klinice</h2>
+          <p>Působíme v Mostech u Jablunkova a nabízíme komplexní stomatologickou péči v příjemném prostředí. Zaměřujeme se na prevenci, záchovnou i estetickou stomatologii a klademe důraz na individuální přístup ke každému pacientovi.</p>
+          <div class="facts">
+            <div><strong>Vlastní zubní laboratoř</strong></div>
+            <div><strong>3D rentgen CBCT</strong></div>
+          </div>
+          <p class="facts-more"><a class="btn" href="o-nas.html">Více o naší klinice</a></p>
+        </div>
+        <figure>
+          <img src="img/chodba.jpg" alt="Chodba kliniky směrem k recepci a čekárně">
+        </figure>
+      </div>
+    </section>
+    <figure class="walk">
+      <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture poster="img/uvod-poster.jpg" aria-label="Prohlídka kliniky">
+        <source src="img/uvod.mp4" type="video/mp4">
+      </video>
+    </figure>
     <section class="band home-gallery" id="fotogalerie" aria-label="Fotogalerie">
       <div class="wrap">
-        <div class="section-label">
-          <h2>Fotogalerie</h2>
-        </div>
         <div class="slideshow">
           <button class="slide-nav slide-prev" type="button" aria-label="Předchozí fotka">‹</button>
           <div class="slide-frame">
@@ -132,10 +115,25 @@
             <a href="img/ordinace-bila.jpg" data-gallery><img src="img/ordinace-bila.jpg" alt="Ordinace"></a>
             <a href="img/ordinace-modra.jpg" data-gallery><img src="img/ordinace-modra.jpg" alt="Ordinace"></a>
             <a href="img/ordinace-drevo.jpg" data-gallery><img src="img/ordinace-drevo.jpg" alt="Ordinace"></a>
-            <a href="img/osetreni.jpg" data-gallery><img src="img/osetreni.jpg" alt="Ošetření"></a>
           </div>
           <button class="slide-nav slide-next" type="button" aria-label="Další fotka">›</button>
         </div>
+      </div>
+    </section>
+    <section class="week-band" aria-labelledby="hodiny">
+      <div class="wrap week-grid">
+      <div>
+        <p class="kicker">Ordinační hodiny</p>
+        <h2 id="hodiny">Po–Pá 7:00–15:00</h2>
+        <p class="where">Mosty u Jablunkova 417, 739 98<br><a href="tel:+420774822554">+420 774 822 554</a><br><a href="mailto:recepce@stardent.cz">recepce@stardent.cz</a></p>
+      </div>
+      <ol class="week">
+        <li><span class="day">Po</span><span class="time">7:00–15:00</span></li>
+        <li><span class="day">Út</span><span class="time">7:00–15:00</span></li>
+        <li><span class="day">St</span><span class="time">7:00–15:00</span></li>
+        <li><span class="day">Čt</span><span class="time">7:00–15:00</span></li>
+        <li><span class="day">Pá</span><span class="time">7:00–15:00</span></li>
+      </ol>
       </div>
     </section>
     <div class="lb" role="dialog" aria-modal="true" aria-label="Fotografie">

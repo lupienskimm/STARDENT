@@ -5,6 +5,7 @@
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.style.overflow = open ? "hidden" : "";
     });
   }
 
@@ -29,6 +30,27 @@
   var week = document.querySelectorAll(".week li");
   var today = new Date().getDay();
   if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll(".walk video, .hero-bg").forEach(function (clip) {
+    if (reduceMotion) {
+      clip.removeAttribute("autoplay");
+      clip.pause();
+      return;
+    }
+    var kicking = false;
+    clip.muted = true;
+    clip.loop = true;
+    var keepPlaying = function () {
+      if (document.hidden || kicking) return;
+      kicking = true;
+      var pending = clip.play();
+      if (pending && pending.finally) pending.finally(function () { kicking = false; });
+      else kicking = false;
+    };
+    clip.addEventListener("pause", keepPlaying);
+    keepPlaying();
+  });
 
   var frame = document.querySelector(".slide-frame");
   if (frame) {

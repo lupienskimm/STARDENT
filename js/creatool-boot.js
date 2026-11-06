@@ -30,7 +30,7 @@
     ],
     pages: [
       { path: "index.html", label: "Domů" },
-      { path: "o-nas.html", label: "O nás" },
+      { path: "o-nas.html", label: "Klinika/tým" },
       { path: "sluzby.html", label: "Služby" },
       { path: "pravidelne-prohlidky.html", label: "Pravidelné prohlídky" },
       { path: "dentalni-hygiena.html", label: "Dentální hygiena" },
