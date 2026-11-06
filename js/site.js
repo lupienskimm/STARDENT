@@ -47,9 +47,11 @@
     });
   }
 
-  var week = document.querySelectorAll(".week li");
   var today = new Date().getDay();
-  if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
+  document.querySelectorAll(".week").forEach(function (list) {
+    var days = list.querySelectorAll("li");
+    if (today >= 1 && today <= 5 && days[today - 1]) days[today - 1].classList.add("is-today");
+  });
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.querySelectorAll(".hero-bg").forEach(function (clip) {
