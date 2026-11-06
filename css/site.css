@@ -203,6 +203,20 @@ button, input, textarea { font: inherit; color: inherit; }
   80% { transform: translate3d(-10px, 6px, 0) rotate(-1deg); }
   100% { transform: translate3d(0, 0, 0) rotate(-3deg); }
 }
+@keyframes nav-pop {
+  0% { opacity: 0; transform: translateY(22px) scale(0.9); }
+  62% { opacity: 1; transform: translateY(-6px) scale(1.04); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes nav-out {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(14px) scale(0.96); }
+}
+@keyframes nav-mark {
+  0% { opacity: 0; transform: translateY(22px) scale(0.88); }
+  62% { opacity: 0.42; transform: translateY(-6px) scale(1.05); }
+  100% { opacity: 0.32; transform: translateY(0) scale(1); }
+}
 .home-hero-copy, .home-hero-photo { position: relative; z-index: 2; min-width: 0; }
 .home-hero-copy {
   display: grid;
@@ -873,7 +887,7 @@ body:has(.contact-grid) { background: var(--paper); }
   }
   .nav-toggle { display: inline-flex; margin-left: auto; position: relative; z-index: 2; }
   .site-nav {
-    display: none;
+    display: flex;
     position: fixed;
     left: 0;
     right: 0;
@@ -886,22 +900,56 @@ body:has(.contact-grid) { background: var(--paper); }
     padding: 0.6rem var(--pad) 1.4rem;
     gap: 0;
     overflow: auto;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-18px);
+    transition: transform 0.42s ease, visibility 0s linear 0.42s;
   }
-  .site-nav.is-open { display: flex; }
-  .site-nav a { padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,.12); }
-  .site-nav.is-open::after {
+  .site-nav.is-open,
+  .site-nav.is-closing { visibility: visible; }
+  .site-nav.is-open {
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: transform 0.55s cubic-bezier(0.22, 1.45, 0.36, 1), visibility 0s;
+  }
+  .site-nav.is-closing {
+    pointer-events: none;
+    transform: translateY(-14px);
+  }
+  .site-nav a {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    opacity: 0;
+  }
+  .site-nav.is-open a { animation: nav-pop 0.64s cubic-bezier(0.22, 1.4, 0.36, 1) forwards; }
+  .site-nav.is-open a:nth-child(1) { animation-delay: 0.04s; }
+  .site-nav.is-open a:nth-child(2) { animation-delay: 0.1s; }
+  .site-nav.is-open a:nth-child(3) { animation-delay: 0.16s; }
+  .site-nav.is-open a:nth-child(4) { animation-delay: 0.22s; }
+  .site-nav.is-open a:nth-child(5) { animation-delay: 0.28s; }
+  .site-nav.is-closing a { animation: nav-out 0.28s ease forwards; }
+  .site-nav.is-closing a:nth-child(1) { animation-delay: 0.12s; }
+  .site-nav.is-closing a:nth-child(2) { animation-delay: 0.09s; }
+  .site-nav.is-closing a:nth-child(3) { animation-delay: 0.06s; }
+  .site-nav.is-closing a:nth-child(4) { animation-delay: 0.03s; }
+  .site-nav.is-closing a:nth-child(5) { animation-delay: 0s; }
+  .site-nav.is-open::after,
+  .site-nav.is-closing::after {
     content: "";
     display: block;
     width: min(210px, 48vw);
     height: min(250px, 34vh);
     margin: auto auto 0.4rem;
     background: url("../img/logo.svg") center / contain no-repeat;
-    opacity: 0.32;
     pointer-events: none;
     transform-origin: center;
-    animation: logo-float 64s ease-in-out infinite;
     flex: none;
   }
+  .site-nav.is-open::after {
+    opacity: 0;
+    animation: nav-mark 0.7s cubic-bezier(0.22, 1.5, 0.36, 1) 0.24s forwards, logo-float 64s ease-in-out 0.95s infinite;
+  }
+  .site-nav.is-closing::after { animation: nav-out 0.28s ease forwards; }
   .nav-cta { margin-top: 0.8rem; text-align: center; border-bottom: 0 !important; }
   .home-hero, .split, .stage-a, .stage-b, .consult, .contact-grid, .booklet, .systems, .catalog a.row, .catalog a.row:nth-child(even), .news-row, .trio, .week-grid {
     grid-template-columns: 1fr;
@@ -954,7 +1002,19 @@ body:has(.contact-grid) { background: var(--paper); }
   html { scroll-behavior: auto; }
   .home-hero::before,
   .home-hero-photo img + img,
-  .site-nav.is-open::after { animation: none; }
+  .site-nav,
+  .site-nav a,
+  .site-nav.is-open,
+  .site-nav.is-open a,
+  .site-nav.is-closing,
+  .site-nav.is-closing a,
+  .site-nav.is-open::after,
+  .site-nav.is-closing::after {
+    animation: none;
+    transition: none;
+  }
+  .site-nav.is-open a,
+  .site-nav.is-open::after { opacity: 1; transform: none; }
   .hero-bg { display: none; }
   .home-hero-photo img + img { opacity: 0; }
   .about-hero .about-bw { display: none; }

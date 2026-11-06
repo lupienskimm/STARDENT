@@ -2,10 +2,30 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".site-nav");
   if (toggle && nav) {
+    var closeTimer = 0;
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      document.body.style.overflow = open ? "hidden" : "";
+      var expanded = toggle.getAttribute("aria-expanded") === "true";
+      window.clearTimeout(closeTimer);
+      if (expanded) {
+        toggle.setAttribute("aria-expanded", "false");
+        nav.classList.remove("is-open");
+        if (reduceMotion) {
+          nav.classList.remove("is-closing");
+          document.body.style.overflow = "";
+          return;
+        }
+        nav.classList.add("is-closing");
+        closeTimer = window.setTimeout(function () {
+          nav.classList.remove("is-closing");
+          document.body.style.overflow = "";
+        }, 420);
+      } else {
+        nav.classList.remove("is-closing");
+        nav.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+      }
     });
   }
 
