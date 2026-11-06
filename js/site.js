@@ -52,7 +52,7 @@
   if (today >= 1 && today <= 5 && week[today - 1]) week[today - 1].classList.add("is-today");
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  document.querySelectorAll(".walk video, .hero-bg").forEach(function (clip) {
+  document.querySelectorAll(".hero-bg").forEach(function (clip) {
     if (reduceMotion) {
       clip.removeAttribute("autoplay");
       clip.pause();
